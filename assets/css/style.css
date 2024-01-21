@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Noto+Serif:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*---------------------------Colors*/
 
@@ -7,7 +7,7 @@ body {
 }
 
 .name-title {
-    background-color: #fdf5ec;
+    background-color: #1f0f05;
 }
 
 /*---------------------------General*/
@@ -45,12 +45,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
-    align-items: center;
     overflow: hidden;
 }
 
 .heading {
-    color: #1f0f05;
+    color: #ffebc8;
     max-height: 300px;
     margin-top: 30px;
 }
@@ -60,7 +59,7 @@ body {
 }
 
 .name {
-    font-family: "Noto Sans", sans serif;
+    font-family: "Noto Serif Display", sans serif;
     font-weight: 100;
     font-size: 64px;
     text-align: center;
@@ -68,15 +67,11 @@ body {
 }
 
 .title {
-    font-family: "Noto Serif", sans serif;
+    font-family: "Noto Sans", sans serif;
     font-weight: 600;
     font-size: 18px;
     text-align: center;
     margin-top: 35px;
-}
-
-.list-inline-item:not(:last-child) {
-    margin: 0;
 }
 
 .nav-container {
@@ -86,20 +81,22 @@ body {
 .menucontainer {
     font-size: 0;
     padding-right: 10px;
-    margin: 10px;
+    padding-left: 10px;
 }
 
 .menuitem {
     height: 60px;
-    width: 90%;
+    width: 70%;
     text-align: center;
     padding: 8px;
+    margin-bottom: 3px;
 }
 
 .menuitem a {
     width: 100%;
     text-decoration: none;
     color: #1f0f05;
+    background-color: #ffebc8;
     height: 60px;
 }
 
@@ -111,21 +108,29 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-size: 15px;
-    font-weight: 300;
-    letter-spacing: 2px;
+    font-weight: 600;
     font-family: "Noto Sans", sans serif;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 0;
 }
 
 /*---------------------------Media Queries*/
 
 @media (min-width: 768px) {
 
+    .heading {
+        color: #1f0f05;
+    }
+
     .nav-container {
         height: 60px;
+        margin: 10px 0 10px 0;
     }
 
     .name-title {
-        height: 240px;
+        height: 180px;
         margin-top: 10px;
         background-color: transparent;
     }
@@ -135,15 +140,20 @@ body {
     }
 
     .title {
-        margin-top: 25px;
+        margin-top: 45px;
+    }
+
+    .list-inline-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .menuitem a {
+        color: #ffebc8;
+        background-color: #1f0f05;
     }
 }
 
-@media (min-width: 992px) {
-
-    #nav {
-        vertical-align: middle;
-    }
+@media (min-width: 1200px) {
 
     .nav-container {
         height: 300px;
@@ -152,5 +162,31 @@ body {
     .name-title {
         height: 300px;
         margin-top: 35px;
+        padding-left: 25px;
+    }
+
+    .name,
+    .title {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .menucontainer {
+        margin: 10px 10px 0 0;
+    }
+
+    .menuitem {
+        width: 70%;
+        text-align: center;
+        padding: 2px;
+        margin-top: 2px;
+    }
+
+    .menuitem a {
+        height: 35px;
+    }
+
+    .menuitem span {
+        padding-top: 6px;
     }
 }
