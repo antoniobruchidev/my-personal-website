@@ -58,3 +58,7 @@ This is my main marketing website. It targets potential recruiters.
     - Photoshop was used to create the logo, resizing images and editing photos for the website.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process.
+
+## Credits
+
+- [Blinking Text](https://www.w3docs.com/snippets/css/how-to-create-a-blinking-effect-with-css3-animations.html)
