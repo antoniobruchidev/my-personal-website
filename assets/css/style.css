@@ -10,7 +10,15 @@ body {
     background-color: #1f0f05;
 }
 
+footer {
+    background-color: #1f0f05;
+}
+
 /*---------------------------General*/
+
+.body {
+    font-family: "Noto Sans", sans-serif;
+}
 
 .uppercase {
     text-transform: uppercase;
@@ -116,6 +124,177 @@ body {
     margin-right: 0;
 }
 
+/*---------------------------Footer*/
+
+footer {
+    color: #ffebc8;
+}
+
+#contact {
+    font-family: "Noto Serif Display", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 15px;
+}
+
+.footer-subtitle {
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.footer-ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-menuitem {
+    color: darkorange;
+}
+
+.footer-menuitem:hover {
+    color: #ffebc8;
+    text-decoration: none;
+}
+
+.messenger {
+    color: #0099ff;
+}
+
+.messenger:hover,
+.whatsapp:hover {
+    color: #ffebc8;
+}
+
+.whatsapp {
+    color: #00b33c;
+}
+
+.no-padding-left {
+    padding-left: 0;
+}
+
+/*---------------------------Jumbotron*/
+
+.jumbotron {
+    margin: 55px 5% 0 5%;
+    width: 90%;
+    border-radius: 30px;
+    background-color: #1f0f05;
+    color: #ffebc8;
+    font-family: "Noto Sans", sans serif;
+}
+
+.jumbotron h1 {
+    font-family: "Noto Serif Display", sans-serif;
+}
+
+.jumbo-text {
+    padding-top: 15px;
+}
+
+.jumbo-button {
+    color: #1f0f05;
+    background-color: darkorange;
+    margin-left: 25px;
+}
+
+.jumbo-button:hover {
+    color: darkorange;
+    background-color: #1f0f05;
+}
+
+/*---------------------------About*/
+
+#about {
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.about-me-subtitle {
+    font-family: "Noto Serif Display", sans-serif;
+    font-weight: 500;
+}
+
+.about-me {
+    font-weight: 300;
+    text-align: justify;
+}
+
+.page-nav {
+    text-align: right;
+}
+
+.page-nav-item {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    color: darkorange;
+    margin-right: 8px;
+}
+
+/*---------------------------Modal*/
+.contact-heading {
+    font-family: "Noto Serif Display", sans-serif;
+    font-weight: 700;
+    width: 95%;
+}
+
+.modal-content {
+    background-color: #1f0f05;
+    border-radius: 15px;
+    min-height: 480px;
+}
+
+#modal-secondary-heading {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 800;
+
+}
+
+#myModal p {
+    font-size: larger;
+    color: #ffebc8;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.center-form {
+    padding: 10px;
+    margin-left: 25px;
+    max-width: 90%;
+}
+
+form {
+    padding: 5px;
+}
+
+form input[type=text] {
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #ffebc8;
+    color: #1f0f05;
+}
+
+#projectsummary {
+    margin-top: 10px;
+    background-color: #ffebc8;
+    color: #1f0f05;
+}
+
+.modal-button {
+    margin-top: 15px;
+    background-color: darkorange;
+    color: #ffebc8;
+}
+
+.modal-button:hover {
+    background-color: #ffebc8;
+    color: darkorange;
+}
+
 /*---------------------------Media Queries*/
 
 @media (min-width: 768px) {
@@ -188,5 +367,31 @@ body {
 
     .menuitem span {
         padding-top: 6px;
+    }
+}
+
+@media (max-width: 410px) {
+
+    .footer-ul {
+        font-size: smaller;
+    }
+}
+
+/*----------------------CreditedInReadme*/
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        color: darkorange
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        color: darkorange;
     }
 }
