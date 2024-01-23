@@ -90,6 +90,8 @@ footer {
     font-size: 0;
     padding-right: 10px;
     padding-left: 10px;
+    width: 95%;
+    margin-left: 13px;
 }
 
 .menuitem {
@@ -103,10 +105,16 @@ footer {
 .menuitem a {
     width: 100%;
     text-decoration: none;
-    color: #1f0f05;
-    background-color: #ffebc8;
+    color: #ffebc8;
+    background-color: #1f0f05;
     height: 60px;
 }
+
+.menuitem a:hover {
+    color: darkorange;
+}
+
+
 
 .menuitem span {
     display: block;
@@ -200,8 +208,7 @@ footer {
 }
 
 .jumbo-button:hover {
-    color: darkorange;
-    background-color: #1f0f05;
+    background-color: #ffebc8;
 }
 
 /*---------------------------About*/
@@ -233,6 +240,18 @@ footer {
     border-radius: 50%;
     color: darkorange;
     margin-right: 8px;
+    background-color: #1f0f05;
+    padding-top: 4px;
+}
+
+.page-nav-item:hover {
+    background-color: #ffebc8;
+    border: solid 1px #1f0f05;
+    color: #1f0f05;
+}
+
+.page-nav-item i {
+    font-size: smaller;
 }
 
 /*---------------------------Modal*/
@@ -295,6 +314,16 @@ form input[type=text] {
     color: darkorange;
 }
 
+.close {
+    color: darkorange;
+    text-shadow: 0 1px 0 #ffebc8;
+}
+
+.close:hover {
+    color: #ffebc8;
+    text-shadow: 0 1px 0 darkorange;
+}
+
 /*---------------------------Media Queries*/
 
 @media (min-width: 768px) {
@@ -336,6 +365,7 @@ form input[type=text] {
 
     .nav-container {
         height: 300px;
+        margin-left: 0;
     }
 
     .name-title {

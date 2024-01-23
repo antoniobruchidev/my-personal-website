@@ -60,26 +60,28 @@
                   <li
                     class="col-6 col-md-3 col-xl-12 list-inline-item menuitem"
                   >
-                    <a href="index.html" class="hvr-glow"><span>Home</span></a>
+                    <a href="index.html" class="hvr-box-shadow-outset"
+                      ><span>Home</span></a
+                    >
                   </li>
                   <li
                     class="col-6 col-md-3 col-xl-12 list-inline-item menuitem"
                   >
-                    <a href="resume.html" class="hvr-glow"
+                    <a href="resume.html" class="hvr-box-shadow-outset"
                       ><span>Resume</span></a
                     >
                   </li>
                   <li
                     class="col-6 col-md-3 col-xl-12 list-inline-item menuitem"
                   >
-                    <a href="projects.html" class="hvr-glow"
+                    <a href="projects.html" class="hvr-box-shadow-outset"
                       ><span>Projects</span></a
                     >
                   </li>
                   <li
                     class="col-6 col-md-3 col-xl-12 list-inline-item menuitem"
                   >
-                    <a href="#contact" class="hvr-glow">
+                    <a href="#contact" class="hvr-box-shadow-outset">
                       <span>Contact</span></a
                     >
                   </li>
@@ -100,8 +102,11 @@
         <p class="text-center jumbo-text">
           Learn more about me...
           <span>
-            <a class="btn btn-lg jumbo-button" href="#about" role="button"
-              >Find out! <i class="fa-solid fa-arrow-down"></i
+            <a
+              class="btn btn-lg jumbo-button hvr-icon-pulse"
+              href="#about"
+              role="button"
+              >Find out! <i class="fa-solid fa-arrow-down hvr-icon"></i
             ></a>
           </span>
         </p>
@@ -120,13 +125,13 @@
         I'm Italian, born and bred. When I was 14 I decided I wanted to have one
         year of study abroad so I applied trought AFS, passed many psycologycal
         evaluations and by the time I was 16 I was accepted and had my year
-        abroad in California. So wonderful experience it'd take a book to tell
-        the tale.
+        abroad in California. So wonderful, yet hard experience, it'd take a
+        book to tell the tale.
       </p>
       <p class="about-me">
         Back in Italy I finished secondary school and started working, a bit as
         computer repairer, a bit as a chef. This until my early twenties, when
-        after a couple of workplaces, I opened a restaurant and run it for two
+        after a couple of workplaces I opened a restaurant and run it for two
         long years. Tired of the <strong>very</strong> long hours (about 16 per
         day for 400 in a row), I decided I had to step down and put it up for
         sale.
@@ -140,10 +145,14 @@
         to be a Full Stack Developer.
       </p>
       <p class="about-me page-nav">
-        <a href="resume.html" class="btn page-nav-item"> Next </a>
-        <a href="#home" class="btn page-nav-item"
-          ><i class="fa-solid fa-arrow-up"></i
-        ></a>
+        <a href="resume.html" class="btn page-nav-item hvr-icon-pulse">
+          <i class="fa-solid fa-arrow-right hvr-icon"></i>
+          <span class="sr-only">Next</span>
+        </a>
+        <a href="#home" class="btn page-nav-item hvr-icon-pulse">
+          <i class="fa-solid fa-arrow-up hvr-icon"></i>
+          <span class="sr-only">About me</span></a
+        >
       </p>
     </section>
     <footer>
@@ -168,7 +177,7 @@
                   or...
                   <span
                     ><a
-                      href="#myModal"
+                      href="#contactModal"
                       data-toggle="modal"
                       class="footer-menuitem"
                       >Contact me here!</a
@@ -178,10 +187,12 @@
               </ul>
               <div
                 class="modal fade"
-                id="myModal"
+                id="contactModal"
                 tabindex="-1"
                 role="dialog"
-                aria-labelledby="modalLabel"
+                data-backdrop="static"
+                data-keyboard="false"
+                aria-labelledby="contactLabel"
                 aria-hidden="true"
               >
                 <div
@@ -190,7 +201,7 @@
                 >
                   <div class="modal-content">
                     <div class="modal-header text-center">
-                      <h3 class="contact-heading uppercase" id="modalLabel">
+                      <h3 class="contact-heading uppercase" id="contactLabel">
                         Got a project in mind?
                       </h3>
                       <button
@@ -205,7 +216,7 @@
                     <div class="modal-body">
                       <h5
                         class="uppercase text-center"
-                        id="modal-secondary-heading"
+                        id="contact-secondary-heading"
                       >
                         Let's work together!
                       </h5>
@@ -237,7 +248,7 @@
                           required
                         />
                         <textarea
-                          rows="5"
+                          rows="7"
                           name="ProjectSummary"
                           id="projectsummary"
                           class="form-control"
@@ -272,8 +283,12 @@
                   Download my CV
                   <span>
                     <a href="#" target="_blank"
-                      ><i class="fa-solid fa-file-pdf footer-menuitem"></i
-                    ></a>
+                      ><i
+                        class="fa-solid fa-file-pdf footer-menuitem"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="sr-only">Link to Download</span></a
+                    >
                   </span>
                 </li>
                 <li class="col-12 no-padding-left">
@@ -281,13 +296,18 @@
                     <li class="list-inline-item">Share my Website on</li>
                     <li class="list-inline-item">
                       <a href="#" target="_blank" class="messenger"
-                        ><i class="fa-brands fa-facebook-messenger"></i
-                      ></a>
+                        ><i
+                          class="fa-brands fa-facebook-messenger"
+                          aria-hidden="true"
+                        ></i
+                        ><span class="sr-only">Facebook messenger</span></a
+                      >
                     </li>
                     <li class="list-inline-item">
                       <a href="#" target="_blank" class="whatsapp"
-                        ><i class="fa-brands fa-whatsapp"></i
-                      ></a>
+                        ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i
+                        ><span class="sr-only">Whatsapp</span></a
+                      >
                     </li>
                   </ul>
                 </li>

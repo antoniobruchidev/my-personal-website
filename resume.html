@@ -61,7 +61,7 @@
         </div>
     </header>
     <section>
-        
+
     </section>
     <footer>
         <h5 id="contact" class="text-center uppercase">Contacts and Download</h5>
@@ -72,20 +72,22 @@
                     <div class="row">
                         <ul class="col-12 footer-ul">
                             <li>
-                                Send me an email at <span><a href="mailto:antoniobruchi@hotmail.com"
+                                Send me an email at
+                                <span><a href="mailto:antoniobruchi@hotmail.com"
                                         class="footer-menuitem">antoniobruchi@hotmail.com</a></span>
                             </li>
                             <li>
-                                or... <span><a href="#myModal" data-toggle="modal" class="footer-menuitem">Contact me
+                                or...
+                                <span><a href="#contactModal" data-toggle="modal" class="footer-menuitem">Contact me
                                         here!</a></span>
                             </li>
                         </ul>
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
-                            aria-hidden="true">
+                        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" data-backdrop="static"
+                            data-keyboard="false" aria-labelledby="contactLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header text-center">
-                                        <h3 class="contact-heading uppercase" id="modalLabel">
+                                        <h3 class="contact-heading uppercase" id="contactLabel">
                                             Got a project in mind?
                                         </h3>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -93,12 +95,12 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <h5 class="uppercase text-center" id="modal-secondary-heading">
+                                        <h5 class="uppercase text-center" id="contact-secondary-heading">
                                             Let's work together!
                                         </h5>
                                         <p>
-                                            Please forward me your full name, your email address, and a brief but
-                                            detailed project summary.
+                                            Please forward me your full name, your email address,
+                                            and a brief but detailed project summary.
                                         </p>
                                     </div>
                                     <div class="center-form">
@@ -109,7 +111,7 @@
                                                 placeholder="Name" required />
                                             <input type="text" name="Email" id="emailaddress" class="form-control"
                                                 placeholder="Email" required />
-                                            <textarea rows="5" name="ProjectSummary" id="projectsummary"
+                                            <textarea rows="7" name="ProjectSummary" id="projectsummary"
                                                 class="form-control" placeholder="Project description"
                                                 required></textarea>
                                             <div class="form-row text-center">
@@ -133,21 +135,21 @@
                             <li>
                                 Download my CV
                                 <span>
-                                    <a href="#" target="_blank"><i class="fa-solid fa-file-pdf footer-menuitem"></i></a>
+                                    <a href="#" target="_blank"><i class="fa-solid fa-file-pdf footer-menuitem"
+                                            aria-hidden="true"></i><span class="sr-only">Link to Download</span></a>
                                 </span>
                             </li>
                             <li class="col-12 no-padding-left">
                                 <ul class="list-inline">
-                                    <li class="list-inline-item">
-                                        Share my Website on
-                                    </li>
+                                    <li class="list-inline-item">Share my Website on</li>
                                     <li class="list-inline-item">
                                         <a href="#" target="_blank" class="messenger"><i
-                                                class="fa-brands fa-facebook-messenger"></i></a>
+                                                class="fa-brands fa-facebook-messenger" aria-hidden="true"></i><span
+                                                class="sr-only">Facebook messenger</span></a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="#" target="_blank" class="whatsapp"><i
-                                                class="fa-brands fa-whatsapp"></i></a>
+                                        <a href="#" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"
+                                                aria-hidden="true"></i><span class="sr-only">Whatsapp</span></a>
                                     </li>
                                 </ul>
                             </li>
