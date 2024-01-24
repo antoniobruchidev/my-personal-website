@@ -324,6 +324,41 @@ form input[type=text] {
     text-shadow: 0 1px 0 darkorange;
 }
 
+/*---------------------------PersonalInfo*/
+
+.personal-info {
+    margin: 15px;
+}
+
+.personal-info-heading {
+    font-family: "Noto Serif Display", sans-serif;
+    margin-top: 35px;
+    font-weight: 500;
+    color: #1f0f05;
+}
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+    font-size: smaller;
+}
+
+.key {
+    width: 25%;
+    display: inline-block;
+    margin-right: 5px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.value {
+    font-family: "Noto Serif Display", sans-serif;
+    display: inline-block;
+    width: 55%;
+    font-weight: 700;
+}
+
 /*---------------------------Media Queries*/
 
 @media (min-width: 768px) {
