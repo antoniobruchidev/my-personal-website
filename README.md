@@ -6,15 +6,17 @@ This is my main marketing website. It targets potential recruiters.
 -   ### User Stories
 
     -   #### First Time User Goals
-
         1. As a First Time Visitor, I want to find the website theme pleasant and neat, relaxing at the eye.
         2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
         3. As a First Time Visitor, I want to find a dedicated section to past experiences.
 
     -   #### Returning Visitor Goals
+        1. As a Returning Visitor and a potential recruiter, I want to be able to download a CV in pdf format.
+        2. As a Returning Visitor and a potential recruiter I want to notice many different tecnhiques of displaying items throught the website.
 
-        1. As a Returning Visitor, I want to be able to download a CV in pdf format.
-        2. As a Returning Visitor, I want to be able to find more information regarding projects.
+    -   #### Frequent Visitor Goals
+        1. As a Frequent Visitor, I want to be able to share the website easily
+        2. As a Frequent Visitor, I want to be able to find more information regarding projects.
 
 -   ### Design
 
@@ -24,7 +26,6 @@ This is my main marketing website. It targets potential recruiters.
         I decided to use a combination of "Noto Serif Display" for mostly all the headers and "Noto Sans" for everything else, with a fallback of sans serif.
 
 -   ### Wireframes
-
     -   Home page Wireframes
         - [Mobile](assets/pdf/homepagemobile.pdf)
         - [Medium](assets/pdf/homepagemedium.pdf)
@@ -43,19 +44,16 @@ This is my main marketing website. It targets potential recruiters.
         - [Large](assets/pdf/contactmodalpagelarge.pdf)
 
 ## Features
-
 - Responsive to all device sizes.
 - Interactive elements.
 
 ## Technology used
-
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [JAVASCRIPT]()
 
 ### Frameworks, Libraries & Programs Used
-
-1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+1. [Bootstrap 4.6.2:](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
    - Bootstrap was used to assist with the responsiveness and styling of the website.
 2. [Hover.css:](https://ianlunn.github.io/Hover/)
    - Hover.css was used on the the navigation bar and other icons.
@@ -81,10 +79,10 @@ This is my main marketing website. It targets potential recruiters.
     - CSS Validator was used to validate CSS.
 
 ## Credits
-
 - [Blinking Text](https://www.w3docs.com/snippets/css/how-to-create-a-blinking-effect-with-css3-animations.html)
 - [Data Dump](https://github.com/levinunnink/html-form-to-google-sheet)
 
 ## Debug and testing
-
-- 23/1/24 - [index.html validation](debug/validationofindexpage23.01.24.png) - [resume.html validation](debug/validationofresumepage.png) - [projects.html validation](debug/validationofprojectspage23.01.24.png) - [style.css validation](debug/validationofcss.png) 
+- 23/1/24 - [index.html validation](debug/validationofindexpage23.01.24.png) - [resume.html validation](debug/validationofresumepage.png) - [projects.html validation](debug/validationofprojectspage23.01.24.png) - [style.css validation](debug/validationofcss.png)
+- Know bugs
+    - Carousel buttons once clicked don't lose focus
