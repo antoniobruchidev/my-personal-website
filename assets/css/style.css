@@ -367,6 +367,32 @@ form input[type=text] {
     text-transform: none;
 }
 
+/*---------------------------Carousel*/
+
+#experiencesCarousel {
+    margin-top: 35px;
+    min-height: 500px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    color: #1f0f05;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    color: darkorange;
+}
+
+.carousel-control-next:focus,
+.carousel-control-prev:focus {
+    color: #1f0f05;
+}
+
+.carousel-indicators li {
+    background-color: #1f0f05;
+}
+
 /*---------------------------Media Queries*/
 
 @media (min-width: 768px) {
