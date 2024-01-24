@@ -330,33 +330,41 @@ form input[type=text] {
     margin: 15px;
 }
 
+.personal-info-items {
+    width: 92%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
 .personal-info-heading {
     font-family: "Noto Serif Display", sans-serif;
-    margin-top: 35px;
+    margin-top: 45px;
     font-weight: 500;
     color: #1f0f05;
+    margin-bottom: 20px;
 }
 
 .personal-info-item {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: block;
     clear: both;
     font-size: smaller;
 }
 
 .key {
-    width: 25%;
-    display: inline-block;
-    margin-right: 5px;
+    margin-right: 2px;
     padding-top: 2px;
     vertical-align: top;
+    font-size: smaller;
 }
 
 .value {
     font-family: "Noto Serif Display", sans-serif;
-    display: inline-block;
-    width: 55%;
     font-weight: 700;
+    text-transform: none;
 }
 
 /*---------------------------Media Queries*/
@@ -393,6 +401,10 @@ form input[type=text] {
     .menuitem a {
         color: #ffebc8;
         background-color: #1f0f05;
+    }
+
+    .personal-info-heading {
+        margin-top: 5px;
     }
 }
 
