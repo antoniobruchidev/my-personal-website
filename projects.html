@@ -44,242 +44,106 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm">
-        <div class="container navbar-res">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbar"
-            aria-controls="navbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar">
-            <div class="navbar-nav">
-              <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
-              <a class="nav-link" href="#resume">Resume</a>
-              <a class="nav-link active" href="#projects">Projects</a>
-              <a class="nav-link" href="#contactModal" data-toggle="modal"
-                >Contact</a
-              >
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <div class="container-fluid">
-        <div class="row">
-          <a class="col-12 col-md-4 col-xl-3 picture" href="index.html"></a>
-          <div class="col-12 col-md-8 col-xl-9 heading">
-            <div class="row">
-              <div class="col-12 col-xl-10 name-title">
-                <h1 class="name">Antonio Bruchi</h1>
-                <h2 class="title">
-                  Full Stack Developer <span class="spaced">(in training)</span>
-                </h2>
-              </div>
-              <div class="col-12 col-xl-2 nav-container">
-                <ul id="nav" class="row list-inline menucontainer text-center">
-                  <li
-                    class="col-6 col-md-3 col-xl-12 list-inline-item menuitem"
-                  >
-                    <a href="index.html" class="hvr-glow"><span>Home</span></a>
-                  </li>
-                  <li
-                    class="col-6 col-md-3 col-xl-12 list-inline-item menuitem"
-                  >
-                    <a href="resume.html" class="hvr-glow"
-                      ><span>Resume</span></a
-                    >
-                  </li>
-                  <li
-                    class="col-6 col-md-3 col-xl-12 list-inline-item menuitem"
-                  >
-                    <a href="projects.html" class="hvr-glow"
-                      ><span>Projects</span></a
-                    >
-                  </li>
-                  <li
-                    class="col-6 col-md-3 col-xl-12 list-inline-item menuitem"
-                  >
-                    <a href="#contact" class="hvr-glow">
-                      <span>Contact</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hvr-fade" href="#contactModal" data-toggle="modal">Contact</a>
+            </li>
+        </ul>
     </header>
     <section></section>
     <footer>
-      <h5 id="contact" class="text-center uppercase">Contacts and Download</h5>
-      <div class="container-fluid">
-        <div class="row justify-content-around">
-          <div class="col-6 col-md-4 col-xl-3 text-center">
-            <span class="footer-subtitle">How to contact me</span>
-            <div class="row">
-              <ul class="col-12 footer-ul">
-                <li>
-                  Send me an email at
-                  <span
-                    ><a
-                      href="mailto:antoniobruchi@hotmail.com"
-                      class="footer-menuitem"
-                      >antoniobruchi@hotmail.com</a
-                    ></span
-                  >
-                </li>
-                <li>
-                  or...
-                  <span
-                    ><a
-                      href="#contactModal"
-                      data-toggle="modal"
-                      class="footer-menuitem"
-                      >Contact me here!</a
-                    ></span
-                  >
-                </li>
-              </ul>
-              <div
-                class="modal fade"
-                id="contactModal"
-                tabindex="-1"
-                role="dialog"
-                data-backdrop="static"
-                data-keyboard="false"
-                aria-labelledby="contactLabel"
-                aria-hidden="true"
-              >
-                <div
-                  class="modal-dialog modal-lg modal-dialog-centered"
-                  role="document"
-                >
-                  <div class="modal-content">
-                    <div class="modal-header text-center">
-                      <h3 class="contact-heading uppercase" id="contactLabel">
-                        Got a project in mind?
-                      </h3>
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <h5
-                        class="uppercase text-center"
-                        id="contact-secondary-heading"
-                      >
-                        Let's work together!
-                      </h5>
-                      <p>
-                        Please forward me your full name, your email address,
-                        and a brief but detailed project summary.
-                      </p>
-                    </div>
-                    <div class="center-form">
-                      <form
-                        method="POST"
-                        action="https://script.google.com/macros/s/AKfycbwfKpP_gmWphwrvGc6R0Q7Rib9ZjQcOjReAITy0YKAHmsoxOMoKeF9b6AcrHVp31QXScQ/exec"
-                        id="form"
-                      >
-                        <input
-                          type="text"
-                          name="Name"
-                          id="fullname"
-                          class="form-control"
-                          placeholder="Name"
-                          required
-                        />
-                        <input
-                          type="text"
-                          name="Email"
-                          id="emailaddress"
-                          class="form-control"
-                          placeholder="Email"
-                          required
-                        />
-                        <textarea
-                          rows="7"
-                          name="ProjectSummary"
-                          id="projectsummary"
-                          class="form-control"
-                          placeholder="Project description"
-                          required
-                        ></textarea>
-                        <div class="form-row text-center">
-                          <div class="col">
-                            <button
-                              type="submit"
-                              id="submit"
-                              class="btn modal-button"
-                            >
-                              Send Project Request
-                            </button>
-                          </div>
+        <h5 id="contact" class="text-center uppercase">Contacts and Download</h5>
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <span class="footer-subtitle">Contact me</span>
+                    <div class="row">
+                        <ul class="col-12 footer-ul">
+                            <li>
+                                <a href="#" target="_blank" class="callme"><i class="fa-solid fa-phone"></i><span
+                                        class="sr-only">Call
+                                        me</span></a><a href="mailto:antoniobruchi@hotmail.com" class="footer-menuitem"><i
+                                        class="fa-regular fa-envelope"></i></a>
+                                <span class="sr-only">Email me.</span></a><span> Or </span>
+                                <a href="#contactModal" data-toggle="modal" class="footer-menuitem">Contact me here!</a>
+                            </li>
+                        </ul>
+                        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" data-backdrop="static"
+                            data-keyboard="false" aria-labelledby="contactLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                        <h3 class="contact-heading uppercase" id="contactLabel">
+                                            Got a project in mind?
+                                        </h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h5 class="uppercase text-center" id="contact-secondary-heading">
+                                            Let's work together!
+                                        </h5>
+                                        <p>
+                                            Please forward me your full name, your email address,
+                                            and a brief but detailed project summary.
+                                        </p>
+                                    </div>
+                                    <div class="center-form">
+                                        <form method="POST"
+                                            action="https://script.google.com/macros/s/AKfycbwfKpP_gmWphwrvGc6R0Q7Rib9ZjQcOjReAITy0YKAHmsoxOMoKeF9b6AcrHVp31QXScQ/exec"
+                                            id="form">
+                                            <input type="text" name="Name" id="fullname" class="form-control"
+                                                placeholder="Name" required />
+                                            <input type="text" name="Email" id="emailaddress" class="form-control"
+                                                placeholder="Email" required />
+                                            <textarea rows="7" name="ProjectSummary" id="projectsummary"
+                                                class="form-control" placeholder="Project description" required></textarea>
+                                            <div class="form-row text-center">
+                                                <div class="col">
+                                                    <button type="submit" id="submit" class="btn modal-button">
+                                                        Send Project Request
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </form>
                     </div>
-                  </div>
                 </div>
-              </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <span class="footer-subtitle">Download my CV</span>
+                    <div class="row">
+                        <ul class="col-12 footer-ul">
+                            <li>
+                                <a href="#" target="_blank" class="footer-menuitem">Curriculum (PDF)</a>
+                            </li>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-6 col-md-4 col-xl-3 text-center">
-            <span class="footer-subtitle"
-              >Download my CV or Share my Website</span
-            >
-            <div class="row">
-              <ul class="col-12 footer-ul">
-                <li>
-                  Download my CV
-                  <span>
-                    <a href="#" target="_blank"
-                      ><i
-                        class="fa-solid fa-file-pdf footer-menuitem"
-                        aria-hidden="true"
-                      ></i
-                      ><span class="sr-only">Link to Download</span></a
-                    >
-                  </span>
+            <ul class="list-inline text-center last-item">
+                <li class="list-inline-item footer-subtitle">Share my Website on</li>
+                <li class="list-inline-item">
+                    <a href="#" target="_blank" class="messenger"><i class="fa-brands fa-facebook-messenger"
+                            aria-hidden="true"></i><span class="sr-only">Facebook messenger</span></a>
                 </li>
-                <li class="col-12 no-padding-left">
-                  <ul class="list-inline">
-                    <li class="list-inline-item">Share my Website on</li>
-                    <li class="list-inline-item">
-                      <a href="#" target="_blank" class="messenger"
-                        ><i
-                          class="fa-brands fa-facebook-messenger"
-                          aria-hidden="true"
-                        ></i
-                        ><span class="sr-only">Facebook messenger</span></a
-                      >
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" target="_blank" class="whatsapp"
-                        ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i
-                        ><span class="sr-only">Whatsapp</span></a
-                      >
-                    </li>
-                  </ul>
+                <li class="list-inline-item">
+                    <a href="#" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"
+                            aria-hidden="true"></i><span class="sr-only">Whatsapp</span></a>
                 </li>
-              </ul>
-            </div>
-          </div>
+            </ul>
         </div>
-      </div>
     </footer>
   </body>
 </html>
