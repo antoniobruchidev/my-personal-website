@@ -44,51 +44,22 @@
 
   <body>
     <header>
-      <div class="container-fluid">
-        <div class="row">
-          <a class="col-12 col-md-4 col-xl-3 picture" href="index.html"></a>
-          <div class="col-12 col-md-8 col-xl-9 heading">
-            <div class="row">
-              <div class="col-12 col-xl-10 name-title">
-                <h1 class="name">Antonio Bruchi</h1>
-                <h2 class="title">
-                  Full Stack Developer <span class="spaced">(in training)</span>
-                </h2>
-              </div>
-              <div class="col-12 col-xl-2 nav-container">
-                <ul id="nav" class="row list-inline menucontainer text-center">
-                  <li
-                    class="col-6 col-md-3 col-xl-12 list-inline-item menuitem"
-                  >
-                    <a href="index.html" class="hvr-glow"><span>Home</span></a>
-                  </li>
-                  <li
-                    class="col-6 col-md-3 col-xl-12 list-inline-item menuitem"
-                  >
-                    <a href="resume.html" class="hvr-glow"
-                      ><span>Resume</span></a
-                    >
-                  </li>
-                  <li
-                    class="col-6 col-md-3 col-xl-12 list-inline-item menuitem"
-                  >
-                    <a href="projects.html" class="hvr-glow"
-                      ><span>Projects</span></a
-                    >
-                  </li>
-                  <li
-                    class="col-6 col-md-3 col-xl-12 list-inline-item menuitem"
-                  >
-                    <a href="#contact" class="hvr-glow">
-                      <span>Contact</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container navbar-res">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link active" href="#resume">Resume</a>
+                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#contactModal" data-toggle="modal">Contact</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
+        </nav>
     </header>
     <section class="container-fluid">
       <div class="row">
