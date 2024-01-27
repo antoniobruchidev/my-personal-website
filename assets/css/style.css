@@ -3,15 +3,27 @@
 /*---------------------------Colors*/
 
 body {
-    background-color: #ffebc8;
+    background-color: darkorange;
 }
 
 .jumbotron {
     background-color: #1f0f05;
 }
 
+#about {
+    background-image: linear-gradient(darkorange, #ffebc8, darkorange);
+}
+
+#resume {
+    background-image: linear-gradient(darkorange, #ffebc8, darkorange);
+}
+
 footer {
     background-color: #1f0f05;
+}
+
+.moment-body {
+    background-color: rgba(255, 235, 200, 0.5);
 }
 
 /*---------------------------General*/
@@ -36,6 +48,16 @@ footer {
     padding: 0;
 }
 
+.section-border {
+    border: 2px solid #1f0f05;
+    background-color: rgba(255, 140, 0, 0.2);
+    border-radius: 15px;
+}
+
+.title {
+    padding-top: 15px;
+}
+
 /*---------------------------Header*/
 
 .nav {
@@ -56,17 +78,15 @@ footer {
     color: #ffebc8;
 }
 
+.hvr-underline-from-center::before {
+    background-color: #1f0f05;
+}
+
 /*---------------------------Footer*/
 
 footer {
     color: #ffebc8;
-}
-
-#contact {
-    font-family: "Noto Serif Display", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    padding-top: 15px;
+    padding: 25px 5px;
 }
 
 .footer-subtitle {
@@ -123,6 +143,11 @@ footer {
 
 /*---------------------------Jumbotron*/
 
+.heading {
+    display: grid;
+    justify-content: space-around;
+}
+
 .jumbotron {
     margin: 0 0 25px 0;
     width: 100%;
@@ -137,23 +162,23 @@ footer {
 
 .jumbotron h1 {
     font-family: "Noto Serif Display", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
     color: darkorange;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .jumbotron p {
     color: darkorange;
 }
 
-.jumbo-text {
-    padding-top: 15px;
-    color: #1f0f05;
-}
-
 .jumbo-button {
     color: #1f0f05;
     background-color: darkorange;
-    margin-left: 25px;
+    margin: 15px auto 0 auto;
+    width: 150px;
+    height: 55px;
     border-radius: 4px;
 }
 
@@ -169,30 +194,31 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 300px;
-    max-width: 300px;
+    height: 300px;
+    width: 300px;
     border: 4px solid darkorange;
     border-radius: 50%;
     overflow: hidden;
-    visibility: hidden;
+    display: none;
 }
 
 /*---------------------------About*/
 
 #about {
-    margin: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 20px;
+    margin:0;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .about-me-subtitle {
     font-family: "Noto Serif Display", sans-serif;
     font-weight: 500;
+    margin-bottom: 15px;
 }
 
 .about-me {
     font-weight: 300;
+    padding: 0 10px;
     text-align: justify;
 }
 
@@ -220,6 +246,69 @@ footer {
     font-size: smaller;
 }
 
+
+/*---------------------------Resume*/
+
+#resume { 
+    margin:0;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.moments-container {
+    display: flex;
+    padding: 5%;    
+}
+
+.moment-body {
+    padding: 15px 25px 0 20px;
+    height: 300px;
+    width: 100%;
+    border: 1px solid #1f0f05;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px 0 #1f0f05;
+    display: grid;
+    align-content:space-around;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.moment-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #1f0f05;
+    font-family: "Noto Sans";
+    display: inline-block;
+    width: 100%;
+}
+
+.moment-type {
+    text-decoration: underline;
+    font-weight: 200;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+}
+
+.moment-text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+    color: #1f0f05;
+    font-family: "Noto Sans";
+}
+
+.moment-link {
+    background-color: #1f0f05;
+    color: darkorange;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid darkorange;
+}
 /*---------------------------Modal*/
 .contact-heading {
     font-family: "Noto Serif Display", sans-serif;
@@ -295,7 +384,7 @@ form input[type=text] {
 @media (min-width: 768px) {
 
     .picture {
-        visibility: visible;
+        display: block;
     }
 
     .nav-link {
@@ -304,44 +393,89 @@ form input[type=text] {
         padding: 0 20px;
         color: #1f0f05;
     }
+
+    .jumbotron h1 {
+        font-size: 72px;
+    }
+
+    .desc {
+        font-size: 24px;
+    }
+
+    .moment-body {
+        padding: 15px 4px;
+        margin-top: 25px;
+    }
+    
+    .moment-title {
+        font-weight: 700;
+        font-size: 20px;
+        padding-top: 15px;
+    }
+    
+    .moment-text {
+        padding: 10px 14px;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 992px) {
+    .jumbotron {
+        height: 500px;
+    }
+
+    .heading {
+        height: 370px;
+    }
+
+    .jumbotron h1 {
+        font-size: 96px;
+    }
+
+    .desc {
+        font-size: 26px;
+    }
+
+    .jumbo-button {
+        font-size: 26px;
+        height: 66px;
+        width: 200px;;
+    }
 }
 
 @media (min-width: 1200px) {
-
-    .nav-container {
-        height: 300px;
-        margin-left: 0;
+    .jumbotron h1 {
+        font-size: 114px;
+    }
+    
+    .desc {
+        font-size: 30px;
     }
 
-    .name-title {
-        height: 300px;
-        margin-top: 35px;
-        padding-left: 25px;
+    .jumbo-button {
+        font-size: 32px;
+        height: 75px;
+        width: 230px;;
     }
 
-    .name,
-    .title {
-        text-align: left;
-        margin-left: 0;
+    .moment-text {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .moment-text {
+        font-size: 18px;
     }
 
-    .menucontainer {
-        margin: 10px 10px 0 0;
+    .desc {
+        font-size: 32px;
     }
 
-    .menuitem {
-        width: 70%;
-        text-align: center;
-        padding: 2px;
-        margin-top: 2px;
-    }
-
-    .menuitem a {
-        height: 35px;
-    }
-
-    .menuitem span {
-        padding-top: 6px;
+    .jumbotron h1 {
+        font-size: 148px;
     }
 }
 
