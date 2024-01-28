@@ -23,7 +23,7 @@ footer {
 }
 
 .moment-body {
-    background-color: rgba(255, 235, 200, 0.5);
+    background-color: #1f0f05;
 }
 
 /*---------------------------General*/
@@ -46,16 +46,6 @@ footer {
 
 .container {
     padding: 0;
-}
-
-.section-border {
-    border: 2px solid #1f0f05;
-    background-color: rgba(255, 140, 0, 0.2);
-    border-radius: 15px;
-}
-
-.title {
-    padding-top: 15px;
 }
 
 /*---------------------------Header*/
@@ -118,6 +108,7 @@ footer {
 
 .callme:hover {
     color: #ffebc8;
+    text-decoration: none;
 }
 
 .messenger {
@@ -141,52 +132,29 @@ footer {
     margin-bottom: 0;
 }
 
-/*---------------------------Jumbotron*/
+/*------------------Sections-----------*/
 
-.heading {
-    display: grid;
-    justify-content: space-around;
+.section {
+    border: 2px solid #1f0f05;
+    background-color: #1f0f05;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 4px #ffebc8;
+    margin:16px;
+    padding:12px 2px;
 }
 
-.jumbotron {
-    margin: 0 0 25px 0;
-    width: 100%;
-    background: url("../images/jumbotronbg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #1f0f05;
-    font-family: "Noto Sans", sans serif;
-    padding: 48px 24px;
-    border-radius: 0;
-}
-
-.jumbotron h1 {
+.section-title {
     font-family: "Noto Serif Display", sans-serif;
-    font-size: 56px;
-    font-weight: 600;
-    color: darkorange;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.jumbotron p {
+    font-size: 44px;
     color: darkorange;
 }
 
-.jumbo-button {
-    color: #1f0f05;
-    background-color: darkorange;
-    margin: 15px auto 0 auto;
-    width: 150px;
-    height: 55px;
-    border-radius: 4px;
-}
+/*--------------------JumbotronSection*/
 
-.jumbo-button:hover {
-    background-color: transparent;
-    color: darkorange;
-    border: 1px solid darkorange;
-
+.picture-container {
+    display: grid;
+    justify-content: center;
+    vertical-align: middle;
 }
 
 .picture {
@@ -202,23 +170,76 @@ footer {
     display: none;
 }
 
-/*---------------------------About*/
+.heading {
+    display: grid;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.jumbotron {
+    margin: 0;
+    width: 100%;
+    background: url("../images/jumbotronbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #1f0f05;
+    font-family: "Noto Sans", sans serif;
+    padding: 48px 24px;
+    border-radius: 0;
+}
+
+.jumbotron h1 {
+    font-family: "Noto Serif Display", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    color: darkorange;
+    text-align: center;
+    display: block;
+    margin-top: 25px;
+}
+
+.desc {
+    color: darkorange;
+    display: block;
+}
+
+.jumbo-button {
+    color: #1f0f05;
+    background-color: darkorange;
+    margin: 15px auto 0 auto;
+    width: 150px;
+    height: 55px;
+    border-radius: 4px;
+}
+
+.jumbo-button:hover {
+    background-color: transparent;
+    color: darkorange;
+    border: 1px solid darkorange;
+}
+
+/*--------------------AboutSection*/
 
 #about {
-    margin:0;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin: 0 4px;
+    padding: 8px 3px;
+    border-left: 2px solid #1f0f05;
+    border-right: 2px solid #1f0f05;
 }
 
 .about-me-subtitle {
     font-family: "Noto Serif Display", sans-serif;
+    color: darkorange;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .about-me {
+    font-family: "Noto Sans", sans-serif;
+    color: #ffebc8;
     font-weight: 300;
-    padding: 0 10px;
+    padding: 2px 12px;
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -230,16 +251,14 @@ footer {
     height: 36px;
     width: 36px;
     border-radius: 50%;
-    color: darkorange;
+    color: #ffebc8;
     margin-right: 8px;
     background-color: #1f0f05;
     padding-top: 4px;
 }
 
 .page-nav-item:hover {
-    background-color: #ffebc8;
-    border: solid 1px #1f0f05;
-    color: #1f0f05;
+    color: darkorange;
 }
 
 .page-nav-item i {
@@ -247,20 +266,20 @@ footer {
 }
 
 
-/*---------------------------Resume*/
+/*--------------------ResumeSection*/
 
 #resume { 
-    margin:0;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
+    margin: 0 4px;
+    padding: 8px 3px;
+    border-left: 2px solid #1f0f05;
+    border-right: 2px solid #1f0f05;
 }
 
 .moments-container {
     display: flex;
-    padding: 5%;    
+    padding: 4px; 
+    margin: auto;
+    width: 90%;
 }
 
 .moment-body {
@@ -270,7 +289,7 @@ footer {
     border: 1px solid #1f0f05;
     margin: 15px 0;
     border-radius: 10px;
-    box-shadow: 0 8px 12px 0 #1f0f05;
+    box-shadow: 0 2px 6px 0 darkorange;
     display: grid;
     align-content:space-around;
     vertical-align: middle;
@@ -280,7 +299,7 @@ footer {
 .moment-title {
     font-weight: 700;
     font-size: 20px;
-    color: #1f0f05;
+    color: #ffebc8;
     font-family: "Noto Sans";
     display: inline-block;
     width: 100%;
@@ -298,7 +317,7 @@ footer {
     font-size: 16px;
     font-weight: 500;
     text-align: justify;
-    color: #1f0f05;
+    color: darkorange;
     font-family: "Noto Sans";
 }
 
@@ -308,8 +327,22 @@ footer {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid darkorange;
+    display: block;
+    padding: 0 15px;
+    margin: 2px auto;
+    text-align: center;
+    width: 75%;
 }
+
+.moment-link:hover {
+    color: #ffebc8;
+    text-decoration: none;
+}
+
+/*-------------------ProjectsSection*/
+
 /*---------------------------Modal*/
+
 .contact-heading {
     font-family: "Noto Serif Display", sans-serif;
     font-weight: 700;
@@ -382,6 +415,10 @@ form input[type=text] {
 /*---------------------------Media Queries*/
 
 @media (min-width: 768px) {
+#about,
+#resume {
+    margin: 0 24px;
+}
 
     .picture {
         display: block;
@@ -422,8 +459,14 @@ form input[type=text] {
 }
 
 @media (min-width: 992px) {
+    
+    .section {
+        margin: 24px;
+        padding: 18px 12px;
+    }
+    
     .jumbotron {
-        height: 500px;
+        height: 550px;
     }
 
     .heading {
@@ -486,21 +529,3 @@ form input[type=text] {
     }
 }
 
-/*----------------------CreditedInReadme*/
-
-.blink {
-    animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 1s steps(5, start) infinite;
-}
-
-@keyframes blink-animation {
-    to {
-        color: darkorange
-    }
-}
-
-@-webkit-keyframes blink-animation {
-    to {
-        color: darkorange;
-    }
-}
