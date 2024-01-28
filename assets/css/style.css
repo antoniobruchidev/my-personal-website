@@ -50,6 +50,10 @@ footer {
 
 /*---------------------------Header*/
 
+header {
+    border-bottom: 2px solid #1f0f05;
+}
+
 .nav {
     background-color: darkorange;
     font-family: "Noto Sans";
