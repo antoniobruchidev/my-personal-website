@@ -41,7 +41,6 @@
     >
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
-
   <body>
     <header>
         <ul class="nav justify-content-center">
@@ -52,7 +51,7 @@
                 <a class="nav-link hvr-underline-from-center" href="#resume">Resume</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#projects">Projects</a>
+                <a class="nav-link hvr-underline-from-center" href="#more">More</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link hvr-underline-from-center" href="#contactModal" data-toggle="modal">Contact</a>
@@ -87,7 +86,7 @@
       </div>
     </section>
     <section id="about">
-      <div class="section">
+      <div class="section-border">
         <h2 class="section-title uppercase text-center">About me</h2>
         <p class="about-me">
           Hi, I'm Antonio Bruchi, 41 at the time of writing and for the most of my
@@ -128,13 +127,15 @@
       </div>
     </section>
     <section id="resume">
-      <div class="section">
+      <div class="section-border">
         <h2 class="section-title text-center uppercase">Key Moments</h2>
-        <div class="container-fluid moments-container">
-          <div class="row">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
               <div class="moment-body">
-                <span class="moment-type text-muted text-center">Certification</span>
+                <span class="moment-type text-muted text-center">
+                  <i class="fa-solid fa-certificate"></i> Certification
+                </span>
                 <span class="moment-title uppercase text-center">Diploma for foreign students - June 1999</span>
                 <p class="moment-text">North Monterey County High School
                   <br>
@@ -144,7 +145,9 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
               <div class="moment-body">
-                <span class="moment-type mb-2 text-muted text-center">Certification</span>
+                <span class="moment-type mb-2 text-muted text-center">
+                  <i class="fa-solid fa-certificate"></i> Certification
+                </span>
                 <span class="moment-title uppercase text-center">Diploma High School - Electrician - June 2001</span>
                 <p class="moment-text">
                   I.T.I.S Armellini
@@ -155,7 +158,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
               <div class="moment-body">
-                <span class="moment-type mb-2 text-muted text-center">Work Experience</span>
+                <span class="moment-type mb-2 text-muted text-center">
+                  <i class="fa-solid fa-gears"></i> Work Experience</span>
                 <span class="moment-title uppercase text-center">IT Tech - December 2001 <i class="fa-solid fa-arrow-right"></i> October 2006</span>
               <p class="moment-text">
                 MHZSTORE s.r.l.
@@ -166,18 +170,20 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
               <div class="moment-body">
-                <span class="moment-type mb-2 text-muted text-center">Work Experience</span>
+                <span class="moment-type mb-2 text-muted text-center">
+                  <i class="fa-solid fa-gears"></i> Work Experience</span>
                 <span class="moment-title uppercase text-center">Chef - June 2004 <i class="fa-solid fa-arrow-right"></i> April 2011</span>
               <p class="moment-text">
                 Locanda de' Noveschi
                 <br>
-                Gaiole in Chianti.
+                Gaiole in Chianti (SI) - Italy
               </p>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
               <div class="moment-body">
-                <span class="moment-type mb-2 text-muted text-center">Work Experience</span>
+                <span class="moment-type mb-2 text-muted text-center">
+                  <i class="fa-solid fa-gears"></i> Work Experience</span>
                 <span class="moment-title uppercase text-center">Head Chef/Owner - February 2012 <i class="fa-solid fa-arrow-right"></i> April 2014</span>
                 <p class="moment-text">
                   Antica Osteria degli Angeli
@@ -188,7 +194,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
               <div class="moment-body">
-                <span class="moment-type mb-2 text-muted text-center">Work Experience</span>
+                <span class="moment-type mb-2 text-muted text-center">
+                  <i class="fa-solid fa-gears"></i> Work Experience</span>
                 <span class="moment-title uppercase text-center">Chef - August 2015 <i class="fa-solid fa-arrow-right"></i> present</span>
               <p class="moment-text">
                 Private Chef
@@ -199,9 +206,10 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
               <div class="moment-body">
-                <span class="moment-type mb-2 text-muted text-center">Certification</span>
+                <span class="moment-type mb-2 text-muted text-center">
+                  <i class="fa-solid fa-certificate"></i> Certification</span>
                 <span class="moment-title uppercase text-center">Code Institute Scholar - October 2023 <i class="fa-solid fa-arrow-right"></i> present</span>
-                <p class="moment-text">Attending Full Stack Developer course with 
+                <p class="moment-text">Attending Full Stack Developer course with
                   <a href ="https://codeinstitute.net" class="moment-link" target="_blank"> Code Insitute.
                   </a> 
                 </p>
@@ -210,8 +218,8 @@
           </div>
         </div>
         <p class="about-me page-nav">
-          <a href="projects.html" class="btn page-nav-item hvr-icon-pulse">
-            <i class="fa-solid fa-arrow-right hvr-icon"></i>
+          <a href="#more" class="btn page-nav-item hvr-icon-pulse">
+            <i class="fa-solid fa-arrow-down hvr-icon"></i>
             <span class="sr-only">Next</span>
           </a>
           <a href="#home" class="btn page-nav-item hvr-icon-pulse">
@@ -219,6 +227,44 @@
             <span class="sr-only">About me</span></a
           >
         </p>
+      </div>
+    </section>
+    <section id="more">
+      <div class="section-border">
+        <h2 class="section-title text-center uppercase">More</h2>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 more-container">
+              <h4 class="subtitle">Preface</h4>
+              <p class="more-text">
+                I was coming from a bad experience back in Italy, one of those that makes you feel betrayed by the industry you work for (in my case it was hospitality) and I felt I needed to change.
+                I took some time off to explore some ideas and without noticing I found myself completely into solidity and smart contracts, fascinated by the tech behind it, I wanted to know more so I started from the blockchain 101, 
+                <a href="http://www.bitcoin.org" target="_blank" class="more-link">Bitcoin</a>.
+              </p>
+              <div class="more-pictures">
+                <img src="assets/images/compacf.jpg" alt="An USB ASIC miner" class="more-picture img-fluid">
+              </div>
+              <p class="more-text">
+                I wanted to mine, or at least to try, so I bought an USB Asic Miner. I had fun setting it up and, trying even to run a bitcoin node to solo mine, didn't have any idea I had to write myself a stratum server because bitcoincore doesn't support GBT solo mining anymore.
+                I had to give up the idea of mining on my own node, so I ended up setting the miner up with one of the not many public solo pools. Anyway, this is the result of my first real encounter with blockchain technology.
+              </p>
+              <div class="more-pictures">
+                <img src="assets/images/cgminer-max.png" alt="A screenshot of the mining output." class="more-picture img-fluid">
+              </div>
+              <h4 class="subtitle">My Goal</h4>
+              <p class="more-text">
+                Back to serious things, Smart Contracts: I started studying standards, OpenZeppelin libraries in Solidity. I used remix IDE for my first interaction with testnets (Ethereum and Cronos), it's quite easy, but don't get me wrong, I had my fair share of issues! 
+                It's a very ambitious project, I would like it to be the first blockchain based company, with its shares and profits released only in the form of ERC20 and ERC1155. Of course in a fully compliant legal framework. It's still long way to go, so I'll stop spoiling. But come back again and check.
+              </p>
+              <p class="about-me page-nav">
+                <a href="#home" class="btn page-nav-item hvr-icon-pulse">
+                  <i class="fa-solid fa-arrow-up hvr-icon"></i>
+                  <span class="sr-only">About me</span></a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer>
