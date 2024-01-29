@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antonio Bruchi</title>
+    <meta property="og:url"           content="https://antoniobruchidev.github.io/my-personal-website" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Antonio Bruchi" />
+    <meta property="og:description"   content="Full stack developer in training" />
+    <meta property="og:image"         content="https://antoniobruchidev.github.io/my-personal-website/assets/images/responsiveness.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -245,14 +250,48 @@
               </div>
               <p class="more-text">
                 I wanted to mine, or at least to try, so I bought an USB Asic Miner. I had fun setting it up and, trying even to run a bitcoin node to solo mine, didn't have any idea I had to write myself a stratum server because bitcoincore doesn't support GBT solo mining anymore.
-                I had to give up the idea of mining on my own node, so I ended up setting the miner up with one of the not many public solo pools. Anyway, this is the result of my first real encounter with blockchain technology.
+                I had to give up the idea of mining on my own node, so I ended up setting the miner up with one of the not many public solo pools. Anyway, this is the result of my first real encounter with blockchain technology. And yes, I know I'll never going to mine a block with about 200 Gh/s, it was only for educational purpose.
               </p>
               <div class="more-pictures">
                 <img src="assets/images/cgminer-max.png" alt="A screenshot of the mining output." class="more-picture img-fluid">
               </div>
               <p class="more-text">
-                Back to serious things, Smart Contracts: I started studying standards, OpenZeppelin libraries in Solidity. I used remix IDE for my first interaction with testnets (Ethereum and Cronos), it's quite easy, but don't get me wrong, I had my fair share of issues! 
-                It's a very ambitious project, I would like it to be the first blockchain based company, with its shares and profits released only in the form of ERC20 and ERC1155. Of course in a fully compliant legal framework. It's still long way to go, so I'll stop spoiling. But come back again and check.
+                <script>
+                  function more() {
+                    document.getElementById('projectsummary').value = "I Want to know more";
+                    document.getElementById('projectsummary').readOnly = true;
+                  }
+                  function notReadOnly () {
+                    document.getElementById('projectsummary').readOnly = false;
+                    document.getElementById('projectsummary').value = "";
+                    $('#contactModal').modal('show');
+                  }
+                </script>
+                <script>
+                  const form = document.querySelector("#form");
+                  const submitButton = document.querySelector("#submit");
+                  const scriptURL =
+                    "https://script.google.com/macros/s/AKfycbwG9vCMBREFM4suhSiTdVPFu7-F-6JclKyZGGuKjFS-dqaZT6kKXS6r_15kub3YH2R5yw/exec";
+
+                  window.addEventListener("load", function () {
+                    const form = document.getElementById("form");
+                    form.addEventListener("submit", function (e) {
+                      e.preventDefault();
+                      const data = new FormData(form);
+                      const action = e.target.action;
+                      fetch(action, {
+                        method: "POST",
+                        body: data,
+                      })
+                        .then(() => {
+                          $("#contactModal").modal("hide");
+                        });
+                    });
+                  });
+                </script>
+                Back to serious things, Smart Contracts: I started studying standards, OpenZeppelin libraries in Solidity. I used remix IDE for my first interaction with testnets (Ethereum and Cronos), I'm making it quite easy, but don't get me wrong, I had and have my fair share of issues! 
+                It's a very ambitious project, I would like it to be the first blockchain based company, with its shares and profits released only in the form of ERC20 and ERC1155. Of course in a fully compliant legal framework. And it's still way too early to keep talking about it now, so I'll stop spoiling. But come back again and check or
+                <button data-toggle="modal" data-target="#contactModal" onclick="more()" class="moment-link">I Want to Know More</button>
               </p>
               <p class="about-me page-nav">
                 <a href="#home" class="btn page-nav-item hvr-icon-pulse">
@@ -285,6 +324,7 @@
                   <a
                     href="#contactModal"
                     data-toggle="modal"
+                    onclick="notReadOnly()"
                     class="footer-menuitem"
                     >Contact me here!
                   </a>
@@ -393,17 +433,29 @@
             </div>
           </div>
         </div>
-        <ul class="list-inline text-center last-item">
+        <div class="last-item">
+          <ul class="list-inline text-center">
             <li class="list-inline-item footer-subtitle">Share on</li>
             <li class="list-inline-item">
-                <a href="#" target="_blank" class="messenger"><i class="fa-brands fa-facebook-messenger"
-                        aria-hidden="true"></i><span class="sr-only">Facebook messenger</span></a>
+                <a 
+                  target="_blank" 
+                  href="https://t.me/share/url?url=https://antoniobruchidev.github.io&text=Antonio%20Bruchi%20-%20Full%20Stack%20Developer%20in%20training."  
+                  class="telegram"
+                  >
+                  <i 
+                    class="fa-brands fa-telegram"
+                    aria-hidden="true">
+                  </i>
+                  <span class="sr-only">Telegram</span>
+                </a>
             </li>
             <li class="list-inline-item">
-                <a href="#" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span
+                <a href="whatsapp://send?text=https://antoniobruchidev.github.io/my-personal-website"       data-action="share/whatsapp/share"  
+                target="_blank"  class="whatsapp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span
                         class="sr-only">Whatsapp</span></a>
             </li>
-        </ul>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

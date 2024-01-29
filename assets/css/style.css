@@ -32,6 +32,10 @@ footer {
 
 /*---------------------------General*/
 
+html {
+    scroll-behavior: smooth;
+}
+  
 .body {
     font-family: "Noto Sans", sans-serif;
 }
@@ -119,11 +123,11 @@ footer {
     text-decoration: none;
 }
 
-.messenger {
+.telegram {
     color: #0099ff;
 }
 
-.messenger:hover,
+.telegram:hover,
 .whatsapp:hover {
     color: #ffebc8;
 }
@@ -139,6 +143,7 @@ footer {
 .last-item {
     margin-bottom: 0;
 }
+
 
 /*------------------Sections-----------*/
 
@@ -166,7 +171,7 @@ footer {
 }
 
 .picture {
-    background: url("../images/man.png");
+    background: url("../images/ab.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -512,6 +517,10 @@ form input[type=text] {
 }
 
 @media (min-width: 992px) {
+
+    .last-item {
+        display: none;
+    }
     
     .section {
         margin: 24px;

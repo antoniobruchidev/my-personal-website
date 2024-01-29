@@ -1,6 +1,10 @@
 # Antonio Bruchi's Website
 This is my main marketing website. It targets potential recruiters.
 
+![Website fully responsive](assets/images/responsiveness.png)
+
+[Live website](https://antoniobruchidev.github.io/my-personal/website)
+
 ## User Experience (U.X.)
 
 -   ### User Stories
