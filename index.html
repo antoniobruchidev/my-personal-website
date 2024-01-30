@@ -59,7 +59,7 @@
                 <a class="nav-link hvr-underline-from-center" href="#more">More</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#contactModal" data-toggle="modal">Contact</a>
+                <a class="nav-link hvr-underline-from-center" href="#contactModal" onclick="moreReset()" data-toggle="modal">Contact</a>
             </li>
         </ul>
     </header>
@@ -261,6 +261,12 @@
                     document.getElementById('projectsummary').value = "I Want to know more";
                     document.getElementById('projectsummary').readOnly = true;
                   }
+                  function moreReset() {
+                    document.getElementById('projectsummary').readOnly = false;
+                          document.getElementById('fullname').value = "";
+                          document.getElementById('emailaddress').value = "";
+                          document.getElementById('projectsummary').value = "";
+                  }
                 </script>
                 <script>
                   const form = document.querySelector("#form");
@@ -327,6 +333,7 @@
                   <a
                     href="#contactModal"
                     data-toggle="modal"
+                    onclick="moreReset()"
                     class="footer-menuitem"
                     >Contact me here!
                   </a>
@@ -452,9 +459,14 @@
                 </a>
             </li>
             <li class="list-inline-item">
-                <a onclick="onShareWhatsApp()"       data-action="share/whatsapp/share"  
-                target="_blank"  class="whatsapp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span
-                        class="sr-only">Whatsapp</span></a>
+              <a 
+                onclick="onShareWhatsApp()" 
+                href="" 
+                data-action="share/whatsapp/share"   
+                class="whatsapp">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                <span class="sr-only">Whatsapp</span>
+              </a>
             </li>
           </ul>
           <script>
