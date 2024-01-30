@@ -67,10 +67,10 @@
       <div class="jumbotron">
         <div class="container-fluid">
           <div class="row no-gutters justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 picture-container">
-              <div class="picture"></div>
+            <div class="col-12 col-md-6 col-lg-4 picture-container">
+              <div class="picture text-center"></div>
             </div>
-            <div class="col-12 col-md-6 col-lg-8 col-xl-9 heading">
+            <div class="col-12 col-md-6 heading">
               <h1>Antonio Bruchi</h1>
               <p class="desc spaced uppercase text-center">full stack developer in training
               </p>
@@ -261,11 +261,6 @@
                     document.getElementById('projectsummary').value = "I Want to know more";
                     document.getElementById('projectsummary').readOnly = true;
                   }
-                  function notReadOnly () {
-                    document.getElementById('projectsummary').readOnly = false;
-                    document.getElementById('projectsummary').value = "";
-                    $('#contactModal').modal('show');
-                  }
                 </script>
                 <script>
                   const form = document.querySelector("#form");
@@ -284,7 +279,12 @@
                         body: data,
                       })
                         .then(() => {
-                          $("#contactModal").modal("hide");
+                          document.getElementById('projectsummary').readOnly = false;
+                          document.getElementById('fullname').value = "";
+                          document.getElementById('emailaddress').value = "";
+                          document.getElementById('projectsummary').value = "";
+                          document.getElementById("form-output").style.visibility = "visible";
+                          $("#contactModal").modal('hide');
                         });
                     });
                   });
@@ -292,6 +292,9 @@
                 Back to serious things, Smart Contracts: I started studying standards, OpenZeppelin libraries in Solidity. I used remix IDE for my first interaction with testnets (Ethereum and Cronos), I'm making it quite easy, but don't get me wrong, I had and have my fair share of issues! 
                 It's a very ambitious project, I would like it to be the first blockchain based company, with its shares and profits released only in the form of ERC20 and ERC1155. Of course in a fully compliant legal framework. And it's still way too early to keep talking about it now, so I'll stop spoiling. But come back again and check or
                 <button data-toggle="modal" data-target="#contactModal" onclick="more()" class="moment-link">I Want to Know More</button>
+              </p>
+              <p class="more-text" id="form-output">
+                Thank you very much, I will be in touch!
               </p>
               <p class="about-me page-nav">
                 <a href="#home" class="btn page-nav-item hvr-icon-pulse">
@@ -324,7 +327,6 @@
                   <a
                     href="#contactModal"
                     data-toggle="modal"
-                    onclick="notReadOnly()"
                     class="footer-menuitem"
                     >Contact me here!
                   </a>
@@ -450,11 +452,22 @@
                 </a>
             </li>
             <li class="list-inline-item">
-                <a href="whatsapp://send?text=https://antoniobruchidev.github.io/my-personal-website"       data-action="share/whatsapp/share"  
+                <a onclick="onShareWhatsApp()"       data-action="share/whatsapp/share"  
                 target="_blank"  class="whatsapp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span
                         class="sr-only">Whatsapp</span></a>
             </li>
           </ul>
+          <script>
+            function onShareWhatsApp(){
+    
+
+    if (window.innerWidth >= 992){
+        window.open(`https://web.whatsapp.com:/send?text=https://antoniobruchidev.github.io/my-personal-resume`);
+    } else {
+        window.open(`whatsapp://send?text=https://antoniobruchidev.github.io/my-personal-website`);
+    }
+}
+          </script>
         </div>
       </div>
     </footer>

@@ -165,9 +165,8 @@ footer {
 /*--------------------JumbotronSection*/
 
 .picture-container {
-    display: grid;
-    justify-content: center;
-    vertical-align: middle;
+    display: flexbox;
+    width: 100%;
 }
 
 .picture {
@@ -374,6 +373,12 @@ footer {
     padding: 2px 12px;
     font-size: 16px;
     text-align: justify;
+    margin: 8px 1px;
+}
+.more-text .moment-link {
+    width: 250px;
+    margin-top: 35px;
+    margin-bottom: 30px;
 }
 
 .more-link {
@@ -398,6 +403,9 @@ footer {
     max-width: 95%;
 }
 
+#form-output {
+    visibility: hidden;
+}
 /*---------------------------Modal*/
 
 .contact-heading {
@@ -472,14 +480,18 @@ form input[type=text] {
 /*---------------------------Media Queries*/
 
 @media (min-width: 768px) {
-#about,
-#resume,
-#more {
-    margin: 0 24px;
-}
-
+    #about,
+    #resume,
+    #more {
+        margin: 0 24px;
+    }
+    
     .picture {
         display: block;
+        height: 315px;
+        width: 315px;
+        margin: 0 auto;
+        
     }
 
     .nav-link {
@@ -517,11 +529,12 @@ form input[type=text] {
 }
 
 @media (min-width: 992px) {
-
-    .last-item {
-        display: none;
-    }
     
+    .picture {
+        height: 345px;
+        width: 345px;
+    }
+
     .section {
         margin: 24px;
         padding: 18px 12px;
@@ -551,6 +564,29 @@ form input[type=text] {
 }
 
 @media (min-width: 1200px) {
+    #about,
+    #resume,
+    #more {
+        margin: 0 36px;
+    }
+
+    .section-title {
+        margin-top: 24px;
+    }
+
+    .section-border {
+        margin: 12px 24px;
+        padding: 0 12px;
+    }
+
+    .more-text {
+        padding: 18px 8px;
+    }
+    
+    .picture {
+        height: 405px;
+        width: 405px;
+    }
     .jumbotron h1 {
         font-size: 114px;
     }
@@ -567,10 +603,14 @@ form input[type=text] {
 
     .moment-text {
         font-size: 14px;
+        padding: 18px 8px;
     }
 }
 
 @media (min-width: 1600px) {
+    .jumbotron {
+        height: 600px;
+    }
     .moment-text {
         font-size: 18px;
     }
@@ -581,6 +621,11 @@ form input[type=text] {
 
     .jumbotron h1 {
         font-size: 148px;
+    }
+
+    .picture {
+        height: 435px;
+        width: 435px;
     }
 }
 
