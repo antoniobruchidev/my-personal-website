@@ -34,9 +34,7 @@ It was developed to showcase my ability to design and create a static website.
       - [Bugs](#bugs)
     - [Deployment](#deployment)
     - [Credits](#credits)
-    - [Content](#content)
-    - [Media](#media)
-    - [Acknowledgements](#acknowledgements)
+      - [Acknowledgements](#acknowledgements)
 
 ## UX
 
