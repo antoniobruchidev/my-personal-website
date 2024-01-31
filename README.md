@@ -118,7 +118,7 @@ I have selected "darkorange" as background color visible only in the navbar and 
   
 - **Accessibility**
   I confirmed that the colors chosen are easy to read and accessible by running it through [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
-  - [Orange on Brown](hhttps://webaim.org/resources/contrastchecker/?fcolor=FF8C00&bcolor=1F0F05)
+  - [Orange on Brown](https://webaim.org/resources/contrastchecker/?fcolor=FF8C00&bcolor=1F0F05)
   - [Beige on Brown](https://webaim.org/resources/contrastchecker/?fcolor=FFEBC8&bcolor=1F0F05)
 
 ### Bugs
