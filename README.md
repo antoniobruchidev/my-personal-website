@@ -94,10 +94,17 @@ I have selected "darkorange" as background color visible only in the navbar and 
 
 ## Technologies
 
-1. HTML - To create a basic site
-2. CSS - To create a nice, standout front-end and to give a great user experience
+1. HTML - To create a basic site.
+2. CSS - To create a nice, standout front-end and to give a great user experience.
 3. JQuery - To hide the modal after submit the form but preventing refresh.
 4. JS - To reset form values. Responsive WhatsApp share link that on desktop size and larger redirects to WhatsApp Web instead to "open with" dialog.
+5. Bootstrap - To help me with the styling.
+6. GIMP - To manipulate images.
+7. Font Awesome - Icons.
+8. Hover.css - To animate the navigation bar and the code institute link.
+9. VS Code - As an IDE.
+10. git - for version control and deployment.
+11. APACHE WEB SERVER - to check on localhost changes i was making.
 
 ## Testing
 
@@ -145,6 +152,7 @@ I have selected "darkorange" as background color visible only in the navbar and 
     - [Use of fetch(...).then() to submit form](https://stackoverflow.com/questions/46640024/how-do-i-post-form-data-with-fetch-api)
     - [Prevent from reloading page on submit](https://adnan-tech.com/prevent-form-submit-event-from-reloading-the-page/)
     - [Modal close - Bootstrap doc](https://getbootstrap.com/docs/4.6/components/modal/)
+    - [Interfacing Google sheets with my form](https://github.com/levinunnink/html-form-to-google-sheet)
 - [Whatsapp Share button](https://www.c-sharpcorner.com/article/whatsapp-web-and-mobile-sharing-in-javascript/) and modified for my use.
 
 
