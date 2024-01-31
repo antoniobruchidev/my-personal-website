@@ -82,7 +82,7 @@ The website is designed to be clear and simple. It has four sections stacked on 
 #### Wireframes
 
 The wireframes are designed using Balsamiq software. This second draft was edited after the second session with my mentor.
-- [Home](assets/pdf/wireframehero.pdf)
+- [Home](assets/pdf/wireframehome.pdf)
 - [Education & Work experiences](assets/pdf/wireframeeduwork.pdf)
 - [More](assets/pdf/wireframemore.pdf)
 - [Contac Modal](assets/pdf/wireframecontactmodal.pdf)

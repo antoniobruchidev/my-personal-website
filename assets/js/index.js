@@ -1,5 +1,6 @@
 
 function more() {
+    moreReset();
     document.getElementById('projectsummary').value = "I Want to know more";
     document.getElementById('projectsummary').readOnly = true;
 }
