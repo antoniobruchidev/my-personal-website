@@ -6,10 +6,6 @@ body {
     background-color: darkorange;
 }
 
-.jumbotron {
-    background-color: #1f0f05;
-}
-
 #about {
     background-image: linear-gradient(darkorange, #ffebc8, darkorange);
 }
@@ -165,7 +161,7 @@ footer {
 /*--------------------JumbotronSection*/
 
 .picture-container {
-    display: flexbox;
+    display: flex;
     width: 100%;
 }
 
@@ -195,7 +191,7 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     color: #1f0f05;
-    font-family: "Noto Sans", sans serif;
+    font-family: "Noto Sans", sans-serif;
     padding: 48px 24px;
     border-radius: 0;
 }
@@ -280,7 +276,8 @@ footer {
 
 /*--------------------ResumeSection*/
 
-#resume { 
+#education,
+#workexperience { 
     margin: 0 4px;
     padding: 8px 3px;
     border-left: 2px solid #1f0f05;
@@ -322,6 +319,7 @@ footer {
     font-size: 14px;
     display: inline-block;
     width: 100%;
+    color: #ffebc8;
 }
 
 .moment-text {
@@ -481,7 +479,8 @@ form input[type=text] {
 
 @media (min-width: 768px) {
     #about,
-    #resume,
+    #education,
+    #workexperience,
     #more {
         margin: 0 24px;
     }
@@ -565,7 +564,8 @@ form input[type=text] {
 
 @media (min-width: 1200px) {
     #about,
-    #resume,
+    #education,
+    #workexperience,
     #more {
         margin: 0 36px;
     }

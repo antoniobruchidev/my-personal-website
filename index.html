@@ -1,487 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antonio Bruchi</title>
-    <meta property="og:url"           content="https://antoniobruchidev.github.io/my-personal-website" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Antonio Bruchi" />
-    <meta property="og:description"   content="Full stack developer in training" />
-    <meta property="og:image"         content="https://antoniobruchidev.github.io/my-personal-website/assets/images/responsiveness.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    >
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/c18c39146b.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-      integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    >
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css"
-      integrity="sha512-Qg72y9f1a3aVc1FVnjq5YURLOOG8fDKQjMnhxYaZgBz4nIVjpVOBUtuMMMqkZPS1FlVrzzEBXq2sM6Qp1zen/Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    >
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <header>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active hvr-underline-from-center" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#resume">Resume</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#more">More</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#contactModal" onclick="moreReset()" data-toggle="modal">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <section id="home">
-      <div class="jumbotron">
-        <div class="container-fluid">
-          <div class="row no-gutters justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4 picture-container">
-              <div class="picture text-center"></div>
-            </div>
-            <div class="col-12 col-md-6 heading">
-              <h1>Antonio Bruchi</h1>
-              <p class="desc spaced uppercase text-center">full stack developer in training
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Antonio Bruchi's Online CV. Education - Work experiences - More - Contact">
+  <meta name="keywords" content="antonio bruchi, cv, skill, education, experience, full stack developer">
+  <meta name="author" content="Antonio Bruchi">
+  <title>Antonio Bruchi</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Start of Navigation bar -->
+  <header>
+    <ul class="nav justify-content-center" id="nav">
+      <li class="nav-item">
+        <a class="nav-link active hvr-underline-from-center" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link hvr-underline-from-center" href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link hvr-underline-from-center" href="#workexperience">Work Experiences</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link hvr-underline-from-center" href="#more">More</a>
+      </li>
+      <li class="nav-item">
+        <!-- moreReset() behaviour: projectsummary textarea readOnly property back to false and form value back to empty strings-->
+        <a class="nav-link hvr-underline-from-center" href="#contactModal" onclick="moreReset()"
+          data-toggle="modal">Contact</a>
+      </li>
+    </ul>
+  </header>
+  <!-- End of Navigation bar -->
+  <!--=========================================================-->
+  <!-- Start of the Home Section" -->
+  <section id="home">
+    <div class="jumbotron">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 picture-container">
+            <div class="picture text-center"></div>
+            <!-- image, hidden in sm dev, visible on the left side of the jumbotron on larger dev -->
+          </div>
+          <div class="col-12 col-md-6 heading">
+            <h1>Antonio Bruchi</h1>
+            <p class="desc spaced uppercase text-center">full stack developer in training
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <a class="btn btn-lg jumbo-button text-center hvr-icon-pulse" href="#about" role="button">Find out! <i
+                class="fa-solid fa-arrow-down hvr-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of the Home Section -->
+  <!--=========================================================-->
+  <!-- Start of the About Section" -->
+  <section id="about">
+    <div class="section-border">
+      <h2 class="section-title uppercase text-center">About me</h2>
+      <p class="about-me">
+        Hi, I'm Antonio Bruchi, 41 at the time of writing and for the most of my
+        life I've been cheffing. Now I'm currently requalifying as Full Stack
+        Developer.
+      <p class="about-me">
+        I'm Italian, born and bred. When I was 14 I decided I wanted to have one
+        year of study abroad so I applied trought AFS, passed many psycologycal
+        evaluations and by the time I was 16 I was accepted and had my year
+        abroad in California. So wonderful, yet hard experience, it'd take a
+        book to tell the tale.
+      </p>
+      <p class="about-me">
+        Back in Italy I finished secondary school and started working, a bit as
+        computer repairer, a bit as a chef. This until my late twenties, when
+        after a couple of workplaces I opened a restaurant and run it for two
+        long years. Tired of the <strong>very</strong> long hours (about 16 per
+        day for 400 in a row), I decided I had to step down and put it up for
+        sale.
+      </p>
+      <p class="about-me">
+        After the well deserved rest and when my brother told me I was going to
+        become an uncle, I felt I had to move to U.K to give a hand. So I did
+        and I've been cheffing in Cardiff since 2015. That is until about an
+        year ago when I felt I needed to change. I'm a Code Insitute scholar
+        training to be a Full Stack Developer.
+      </p>
+      <p class="about-me page-nav">
+        <a href="#resume" class="btn page-nav-item hvr-icon-pulse">
+          <i class="fa-solid fa-arrow-down hvr-icon"></i>
+          <span class="sr-only">Next</span>
+        </a>
+        <a href="#nav" class="btn page-nav-item hvr-icon-pulse">
+          <i class="fa-solid fa-arrow-up hvr-icon"></i>
+          <span class="sr-only">Back to top</span></a>
+      </p>
+    </div>
+  </section>
+  <!-- End of the About Section -->
+  <!--=========================================================-->
+  <!-- Start of the Education Section" -->
+  <section id="education">
+    <div class="section-border">
+      <h2 class="section-title text-center uppercase">Education</h2>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
+            <div class="moment-body">
+              <span class="moment-type mb-2 text-center">
+                <i class="fa-solid fa-certificate"></i> Certification
+              </span>
+              <span class="moment-title uppercase text-center">Diploma for foreign students - June 1999</span>
+              <p class="moment-text">North Monterey County High School
+                <br>
+                Castroville, California - USA
               </p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 text-center">
-              <a
-                  class="btn btn-lg jumbo-button text-center hvr-icon-pulse"
-                  href="#about"
-                  role="button"
-                  >Find out! <i class="fa-solid fa-arrow-down hvr-icon"></i
-                >
-              </a>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
+            <div class="moment-body">
+              <span class="moment-type mb-2 text-center">
+                <i class="fa-solid fa-certificate"></i> Certification
+              </span>
+              <span class="moment-title uppercase text-center">Diploma High School - Electrician - June 2001</span>
+              <p class="moment-text">
+                I.T.I.S Armellini
+                <br>
+                Rome - Italy
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
+            <div class="moment-body">
+              <span class="moment-type mb-2 text-center">
+                <i class="fa-solid fa-certificate"></i> Certification</span>
+              <span class="moment-title uppercase text-center">Code Institute Scholar - October 2023 <i
+                  class="fa-solid fa-arrow-right"></i> present</span>
+              <p class="moment-text">Attending Full Stack Developer course with
+                <a href="https://codeinstitute.net" class="moment-link hvr-buzz" target="_blank"> Code Insitute.
+                </a>
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="about">
-      <div class="section-border">
-        <h2 class="section-title uppercase text-center">About me</h2>
-        <p class="about-me">
-          Hi, I'm Antonio Bruchi, 41 at the time of writing and for the most of my
-          life I've been cheffing. Now I'm currently requalifying as Full Stack
-          Developer.
-        <p class="about-me">
-          I'm Italian, born and bred. When I was 14 I decided I wanted to have one
-          year of study abroad so I applied trought AFS, passed many psycologycal
-          evaluations and by the time I was 16 I was accepted and had my year
-          abroad in California. So wonderful, yet hard experience, it'd take a
-          book to tell the tale.
-        </p>
-        <p class="about-me">
-          Back in Italy I finished secondary school and started working, a bit as
-          computer repairer, a bit as a chef. This until my late twenties, when
-          after a couple of workplaces I opened a restaurant and run it for two
-          long years. Tired of the <strong>very</strong> long hours (about 16 per
-          day for 400 in a row), I decided I had to step down and put it up for
-          sale.
-        </p>
-        <p class="about-me">
-          After the well deserved rest and when my brother told me I was going to
-          become an uncle, I felt I had to move to U.K to give a hand. So I did
-          and I've been cheffing in Cardiff since 2015. That is until about an
-          year ago when I felt I needed to change. I'm a Code Insitute scholar
-          training to be a Full Stack Developer.
-        </p>
-        <p class="about-me page-nav">
-          <a href="#resume" class="btn page-nav-item hvr-icon-pulse">
-            <i class="fa-solid fa-arrow-down hvr-icon"></i>
-            <span class="sr-only">Next</span>
-          </a>
-          <a href="#home" class="btn page-nav-item hvr-icon-pulse">
-            <i class="fa-solid fa-arrow-up hvr-icon"></i>
-            <span class="sr-only">About me</span></a
-          >
-        </p>
-      </div>
-    </section>
-    <section id="resume">
-      <div class="section-border">
-        <h2 class="section-title text-center uppercase">Key Moments</h2>
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
-              <div class="moment-body">
-                <span class="moment-type text-muted text-center">
-                  <i class="fa-solid fa-certificate"></i> Certification
-                </span>
-                <span class="moment-title uppercase text-center">Diploma for foreign students - June 1999</span>
-                <p class="moment-text">North Monterey County High School
-                  <br>
-                  Castroville, California - USA
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
-              <div class="moment-body">
-                <span class="moment-type mb-2 text-muted text-center">
-                  <i class="fa-solid fa-certificate"></i> Certification
-                </span>
-                <span class="moment-title uppercase text-center">Diploma High School - Electrician - June 2001</span>
-                <p class="moment-text">
-                  I.T.I.S Armellini
-                  <br>
-                  Rome - Italy
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
-              <div class="moment-body">
-                <span class="moment-type mb-2 text-muted text-center">
-                  <i class="fa-solid fa-gears"></i> Work Experience</span>
-                <span class="moment-title uppercase text-center">IT Tech - December 2001 <i class="fa-solid fa-arrow-right"></i> October 2006</span>
+      <p class="about-me page-nav">
+        <a href="#workexperience" class="btn page-nav-item hvr-icon-pulse">
+          <i class="fa-solid fa-arrow-down hvr-icon"></i>
+          <span class="sr-only">Go to work experiences</span>
+        </a>
+        <a href="#nav" class="btn page-nav-item hvr-icon-pulse">
+          <i class="fa-solid fa-arrow-up hvr-icon"></i>
+          <span class="sr-only">Back to top</span></a>
+      </p>
+    </div>
+  </section>
+  <!-- End of the Education Section -->
+  <!--=========================================================-->
+  <!-- Start of the Work Experience Section" -->
+  <section id="workexperience">
+    <div class="section-border">
+      <h2 class="section-title text-center uppercase">Work Experiences</h2>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
+            <div class="moment-body">
+              <span class="moment-type mb-2 text-center">
+                <i class="fa-solid fa-gears"></i> Work Experience</span>
+              <span class="moment-title uppercase text-center">IT Tech - December 2001 <i
+                  class="fa-solid fa-arrow-right"></i> October 2006</span>
               <p class="moment-text">
                 MHZSTORE s.r.l.
                 <br>
                 Poggibonsi (SI) - Italy
               </p>
-              </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
-              <div class="moment-body">
-                <span class="moment-type mb-2 text-muted text-center">
-                  <i class="fa-solid fa-gears"></i> Work Experience</span>
-                <span class="moment-title uppercase text-center">Chef - June 2004 <i class="fa-solid fa-arrow-right"></i> April 2011</span>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
+            <div class="moment-body">
+              <span class="moment-type mb-2 text-center">
+                <i class="fa-solid fa-gears"></i> Work Experience</span>
+              <span class="moment-title uppercase text-center">Chef - June 2004 <i class="fa-solid fa-arrow-right"></i>
+                April 2011</span>
               <p class="moment-text">
                 Locanda de' Noveschi
                 <br>
                 Gaiole in Chianti (SI) - Italy
               </p>
-              </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
-              <div class="moment-body">
-                <span class="moment-type mb-2 text-muted text-center">
-                  <i class="fa-solid fa-gears"></i> Work Experience</span>
-                <span class="moment-title uppercase text-center">Head Chef/Owner - February 2012 <i class="fa-solid fa-arrow-right"></i> April 2014</span>
-                <p class="moment-text">
-                  Antica Osteria degli Angeli
-                  <br>
-                  Sant'Agata Bolognese (MO) - Italy
-                </p>
-              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
+            <div class="moment-body">
+              <span class="moment-type mb-2 text-center">
+                <i class="fa-solid fa-gears"></i> Work Experience</span>
+              <span class="moment-title uppercase text-center">Head Chef/Owner - February 2012 <i
+                  class="fa-solid fa-arrow-right"></i> April 2014</span>
+              <p class="moment-text">
+                Antica Osteria degli Angeli
+                <br>
+                Sant'Agata Bolognese (MO) - Italy
+              </p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
-              <div class="moment-body">
-                <span class="moment-type mb-2 text-muted text-center">
-                  <i class="fa-solid fa-gears"></i> Work Experience</span>
-                <span class="moment-title uppercase text-center">Chef - August 2015 <i class="fa-solid fa-arrow-right"></i> present</span>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
+            <div class="moment-body">
+              <span class="moment-type mb-2 text-center">
+                <i class="fa-solid fa-gears"></i> Work Experience</span>
+              <span class="moment-title uppercase text-center">Chef - August 2015 <i
+                  class="fa-solid fa-arrow-right"></i> present</span>
               <p class="moment-text">
                 Private Chef
                 <br>
                 Cardiff - Wales (UK)
               </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 moment-container">
-              <div class="moment-body">
-                <span class="moment-type mb-2 text-muted text-center">
-                  <i class="fa-solid fa-certificate"></i> Certification</span>
-                <span class="moment-title uppercase text-center">Code Institute Scholar - October 2023 <i class="fa-solid fa-arrow-right"></i> present</span>
-                <p class="moment-text">Attending Full Stack Developer course with
-                  <a href ="https://codeinstitute.net" class="moment-link hvr-buzz" target="_blank"> Code Insitute.
-                  </a> 
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="about-me page-nav">
-          <a href="#more" class="btn page-nav-item hvr-icon-pulse">
-            <i class="fa-solid fa-arrow-down hvr-icon"></i>
-            <span class="sr-only">Next</span>
-          </a>
-          <a href="#home" class="btn page-nav-item hvr-icon-pulse">
-            <i class="fa-solid fa-arrow-up hvr-icon"></i>
-            <span class="sr-only">About me</span></a
-          >
-        </p>
-      </div>
-    </section>
-    <section id="more">
-      <div class="section-border">
-        <h2 class="section-title text-center uppercase">More</h2>
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-12 more-container">
-              <p class="more-text">
-                I was coming from a bad experience back in Italy, one of those that makes you feel betrayed by the industry you work for (in my case it was hospitality) and I felt I needed to change.
-                I took some time off to explore some ideas and without noticing I found myself completely into solidity and smart contracts, fascinated by the tech behind it, I wanted to know more so I started from the blockchain 101, 
-                <a href="http://www.bitcoin.org" target="_blank" class="more-link">Bitcoin</a>.
-              </p>
-              <div class="more-pictures">
-                <img src="assets/images/compacf.jpg" alt="An USB ASIC miner" class="more-picture img-fluid">
-              </div>
-              <p class="more-text">
-                I wanted to mine, or at least to try, so I bought an USB Asic Miner. I had fun setting it up and, trying even to run a bitcoin node to solo mine, didn't have any idea I had to write myself a stratum server because bitcoincore doesn't support GBT solo mining anymore.
-                I had to give up the idea of mining on my own node, so I ended up setting the miner up with one of the not many public solo pools. Anyway, this is the result of my first real encounter with blockchain technology. And yes, I know I'll never going to mine a block with about 200 Gh/s, it was only for educational purpose.
-              </p>
-              <div class="more-pictures">
-                <img src="assets/images/cgminer-max.png" alt="A screenshot of the mining output." class="more-picture img-fluid">
-              </div>
-              <p class="more-text">
-                <script>
-                  function more() {
-                    document.getElementById('projectsummary').value = "I Want to know more";
-                    document.getElementById('projectsummary').readOnly = true;
-                  }
-                  function moreReset() {
-                    document.getElementById('projectsummary').readOnly = false;
-                          document.getElementById('fullname').value = "";
-                          document.getElementById('emailaddress').value = "";
-                          document.getElementById('projectsummary').value = "";
-                  }
-                </script>
-                <script>
-                  const form = document.querySelector("#form");
-                  const submitButton = document.querySelector("#submit");
-                  const scriptURL =
-                    "https://script.google.com/macros/s/AKfycbwG9vCMBREFM4suhSiTdVPFu7-F-6JclKyZGGuKjFS-dqaZT6kKXS6r_15kub3YH2R5yw/exec";
-
-                  window.addEventListener("load", function () {
-                    const form = document.getElementById("form");
-                    form.addEventListener("submit", function (e) {
-                      e.preventDefault();
-                      const data = new FormData(form);
-                      const action = e.target.action;
-                      fetch(action, {
-                        method: "POST",
-                        body: data,
-                      })
-                        .then(() => {
-                          document.getElementById('projectsummary').readOnly = false;
-                          document.getElementById('fullname').value = "";
-                          document.getElementById('emailaddress').value = "";
-                          document.getElementById('projectsummary').value = "";
-                          document.getElementById("form-output").style.visibility = "visible";
-                          $("#contactModal").modal('hide');
-                        });
-                    });
-                  });
-                </script>
-                Back to serious things, Smart Contracts: I started studying standards, OpenZeppelin libraries in Solidity. I used remix IDE for my first interaction with testnets (Ethereum and Cronos), I'm making it quite easy, but don't get me wrong, I had and have my fair share of issues! 
-                It's a very ambitious project, I would like it to be the first blockchain based company, with its shares and profits released only in the form of ERC20 and ERC1155. Of course in a fully compliant legal framework. And it's still way too early to keep talking about it now, so I'll stop spoiling. But come back again and check or
-                <button data-toggle="modal" data-target="#contactModal" onclick="more()" class="moment-link">I Want to Know More</button>
-              </p>
-              <p class="more-text" id="form-output">
-                Thank you very much, I will be in touch!
-              </p>
-              <p class="about-me page-nav">
-                <a href="#home" class="btn page-nav-item hvr-icon-pulse">
-                  <i class="fa-solid fa-arrow-up hvr-icon"></i>
-                  <span class="sr-only">About me</span></a
-                >
-              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <footer>
+      <p class="about-me page-nav">
+        <a href="#more" class="btn page-nav-item hvr-icon-pulse">
+          <i class="fa-solid fa-arrow-down hvr-icon"></i>
+          <span class="sr-only">More about me</span>
+        </a>
+        <a href="#nav" class="btn page-nav-item hvr-icon-pulse">
+          <i class="fa-solid fa-arrow-up hvr-icon"></i>
+          <span class="sr-only">Back to top</span></a>
+      </p>
+    </div>
+  </section>
+  <!-- End of the Work Experience Section -->
+  <!--=========================================================-->
+  <!-- Start of the More Section" -->
+  <section id="more">
+    <div class="section-border">
+      <h2 class="section-title text-center uppercase">More</h2>
       <div class="container-fluid">
-        <div class="row justify-content-around">
-          <div class="col-6 col-md-4 col-xl-3 text-center">
-            <span class="footer-subtitle">Contact me</span>
-            <div class="row">
-              <ul class="col-12 footer-ul">
-               <li>
-                  <a href="tel:+447492846468" target="_blank" class="callme">
-                    <i class="fa-solid fa-phone"></i>
-                    <span class="sr-only">Call me</span>
-                  </a>
-                  <a href="mailto:antoniobruchi@hotmail.com" class="footer-menuitem">
-                    <i class="fa-regular fa-envelope"></i>
-                  </a>
-                  <span class="sr-only">Email me.</span>
-                  <span> Or </span>
-                  <a
-                    href="#contactModal"
-                    data-toggle="modal"
-                    onclick="moreReset()"
-                    class="footer-menuitem"
-                    >Contact me here!
-                  </a>
-                </li>
-              </ul>
-              <div
-                class="modal fade"
-                id="contactModal"
-                tabindex="-1"
-                role="dialog"
-                data-backdrop="static"
-                data-keyboard="false"
-                aria-labelledby="contactLabel"
-                aria-hidden="true"
-              >
-                <div
-                  class="modal-dialog modal-lg modal-dialog-centered"
-                  role="document"
-                >
-                  <div class="modal-content">
-                    <div class="modal-header text-center">
-                      <h3 class="contact-heading uppercase" id="contactLabel">
-                        Got a project in mind?
-                      </h3>
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <h5
-                        class="uppercase text-center"
-                        id="contact-secondary-heading"
-                      >
-                        Let's work together!
-                      </h5>
-                      <p>
-                        Please forward me your full name, your email address,
-                        and a brief but detailed project summary.
-                      </p>
-                    </div>
-                    <div class="center-form">
-                      <form
-                        method="POST"
-                        action="https://script.google.com/macros/s/AKfycbwfKpP_gmWphwrvGc6R0Q7Rib9ZjQcOjReAITy0YKAHmsoxOMoKeF9b6AcrHVp31QXScQ/exec"
-                        id="form"
-                      >
-                        <input
-                          type="text"
-                          name="Name"
-                          id="fullname"
-                          class="form-control"
-                          placeholder="Name"
-                          required
-                        >
-                        <input
-                          type="text"
-                          name="Email"
-                          id="emailaddress"
-                          class="form-control"
-                          placeholder="Email"
-                          required
-                        >
-                        <textarea
-                          rows="7"
-                          name="ProjectSummary"
-                          id="projectsummary"
-                          class="form-control"
-                          placeholder="Project description"
-                          required
-                        ></textarea>
-                        <div class="form-row text-center">
-                          <div class="col">
-                            <button
-                              type="submit"
-                              id="submit"
-                              class="btn modal-button"
-                            >
-                              Send Project Request
-                            </button>
-                          </div>
+        <div class="row justify-content-center">
+          <div class="col-12 more-container">
+            <p class="more-text">
+              I was coming from a bad experience back in Italy, one of those that makes you feel betrayed by the
+              industry you work for (in my case it was hospitality) and I felt I needed to change.
+              I took some time off to explore some ideas and without noticing I found myself completely into solidity
+              and smart contracts, fascinated by the tech behind it, I wanted to know more so I started from blockchain
+              101,
+              <a href="http://www.bitcoin.org" target="_blank" class="more-link">Bitcoin</a>.
+            </p>
+            <div class="more-pictures">
+              <img src="assets/images/compacf.jpg" alt="An USB ASIC miner" class="more-picture img-fluid">
+            </div>
+            <p class="more-text">
+              I wanted to mine, or at least to try, so I bought an USB Asic Miner. I had fun setting it up and, trying
+              even to run a bitcoin node to solo mine, didn't have any idea I had to write myself a stratum server
+              because bitcoincore doesn't support GBT solo mining anymore.
+              I had to give up the idea of mining on my own node, so I ended up setting the miner up with one of the not
+              many public solo pools. Anyway, this is the result of my first real encounter with blockchain technology.
+              And yes, I know I'll never going to mine a block with about 200 Gh/s, it was only for educational purpose.
+            </p>
+            <div class="more-pictures">
+              <img src="assets/images/cgminer-max.png" alt="A screenshot of the mining output."
+                class="more-picture img-fluid">
+            </div>
+            <p class="more-text">
+              Back to serious things, Smart Contracts: I started studying standards, OpenZeppelin libraries in Solidity.
+              I used remix IDE for my first interaction with testnets (Ethereum and Cronos), I'm making it quite easy,
+              but don't get me wrong, I had and have my fair share of issues!
+              It's a very ambitious project, I would like it to be the first blockchain based company, with its shares
+              and profits released only in the form of ERC20 and ERC1155. Of course in a fully compliant legal
+              framework. And it's still way too early to keep talking about it now, so I'll stop spoiling. But come back
+              again and check or
+              <button data-toggle="modal" data-target="#contactModal" onclick="more()" class="moment-link">I Want to
+                Know More</button>
+            </p>
+            <!-- more() behavoiur: Populate project summary field with "I Want to Know More" and set its property readOnly to true then trigger the modal -->
+            <p class="more-text" id="form-output">
+              Thank you very much, I will be in touch! <!-- form output hidden to show after submit -->
+            </p>
+            <p class="about-me page-nav">
+              <a href="#nav" class="btn page-nav-item hvr-icon-pulse">
+                <i class="fa-solid fa-arrow-up hvr-icon"></i>
+                <span class="sr-only">Back to top</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of the More Section -->
+  <!--=========================================================-->
+  <!-- Start of the Footer Section" -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row justify-content-around">
+        <!-- Start of Footer Navigation Left Side-->
+        <div class="col-6 col-md-4 col-xl-3 text-center">
+          <span class="footer-subtitle">Contact me</span>
+          <div class="row">
+            <ul class="col-12 footer-ul">
+              <li>
+                <a href="tel:+447492846468" target="_blank" class="callme">
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="sr-only">Call me</span>
+                </a>
+                <a href="mailto:antoniobruchi@hotmail.com" class="footer-menuitem">
+                  <i class="fa-regular fa-envelope"></i>
+                </a>
+                <span class="sr-only">Email me.</span>
+                <span> Or </span>
+                <!-- moreReset() behaviour: projectsummary textarea readOnly property back to false and form value back to empty strings-->
+                <a href="#contactModal" data-toggle="modal" onclick="moreReset()" class="footer-menuitem">Contact me
+                  here!
+                </a>
+              </li>
+            </ul>
+            <!-- Start of Contact modal -->
+            <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" data-backdrop="static"
+              data-keyboard="false" aria-labelledby="contactLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h3 class="contact-heading uppercase" id="contactLabel">
+                      Got a project in mind?
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h5 class="uppercase text-center" id="contact-secondary-heading">
+                      Let's work together!
+                    </h5>
+                    <p>
+                      Please forward me your full name, your email address,
+                      and a brief but detailed project summary.
+                    </p>
+                  </div>
+                  <div class="center-form">
+                    <!-- data dump into google sheets credits in README.md -->
+                    <form onsubmit="return onFormSubmit();" id="form">
+                      <input type="text" name="Name" id="fullname" class="form-control" placeholder="Name" required>
+                      <input type="text" name="Email" id="emailaddress" class="form-control" placeholder="Email"
+                        required>
+                      <textarea rows="7" name="ProjectSummary" id="projectsummary" class="form-control"
+                        placeholder="Project description" required></textarea>
+                      <div class="form-row text-center">
+                        <div class="col">
+                          <button type="submit" id="submit" class="btn modal-button">
+                            Send Project Request
+                          </button>
                         </div>
-                      </form>
-                    </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-6 col-md-4 col-xl-3 text-center">
-            <span class="footer-subtitle"
-              >Download</span
-            >
-            <div class="row">
-              <ul class="col-12 footer-ul">
-                <li>
-                    <a href="#" target="_blank" class="footer-menuitem"
-                      >Curriculum (PDF)</a
-                    >
-                </li>
-                </ul>
-            </div>
+            <!-- End of Modal -->
           </div>
         </div>
-        <div class="last-item">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item footer-subtitle">Share on</li>
-            <li class="list-inline-item">
-                <a 
-                  target="_blank" 
-                  href="https://t.me/share/url?url=https://antoniobruchidev.github.io&text=Antonio%20Bruchi%20-%20Full%20Stack%20Developer%20in%20training."  
-                  class="telegram"
-                  >
-                  <i 
-                    class="fa-brands fa-telegram"
-                    aria-hidden="true">
-                  </i>
-                  <span class="sr-only">Telegram</span>
-                </a>
-            </li>
-            <li class="list-inline-item">
-              <a 
-                onclick="onShareWhatsApp()" 
-                href="" 
-                data-action="share/whatsapp/share"   
-                class="whatsapp">
-                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                <span class="sr-only">Whatsapp</span>
-              </a>
-            </li>
-          </ul>
-          <script>
-            function onShareWhatsApp(){
-    
+        <!-- End of Footer Navigation left side-->
+        <!-- Start of Footer Navigation right side-->
+        <div class="col-6 col-md-4 col-xl-3 text-center">
+          <span class="footer-subtitle">Download</span>
+          <div class="row">
+            <ul class="col-12 footer-ul">
+              <li>
+                <a href="assets/pdf/antonio-bruchi-cv.pdf" target="_blank" class="footer-menuitem">Curriculum (PDF)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- End of Footer Navigation right side-->
 
-    if (window.innerWidth >= 992){
-        window.open(`https://web.whatsapp.com:/send?text=https://antoniobruchidev.github.io/my-personal-resume`);
-    } else {
-        window.open(`whatsapp://send?text=https://antoniobruchidev.github.io/my-personal-website`);
-    }
-}
-          </script>
-        </div>
       </div>
-    </footer>
-  </body>
+      <div class="last-item">
+        <!-- Start of Footer Navigation bottom-->
+        <ul class="list-inline text-center">
+          <li class="list-inline-item footer-subtitle">Share on</li>
+          <li class="list-inline-item">
+            <a target="_blank"
+              href="https://t.me/share/url?url=https://antoniobruchidev.github.io&text=Antonio%20Bruchi%20-%20Full%20Stack%20Developer%20in%20training."
+              class="telegram">
+              <i class="fa-brands fa-telegram" aria-hidden="true">
+              </i>
+              <span class="sr-only">Telegram</span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <!-- WhatsApp credits in README.md -->
+            <a onclick="onShareWhatsApp()" href="" data-action="share/whatsapp/share" class="whatsapp">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <span class="sr-only">Whatsapp</span>
+            </a>
+          </li>
+        </ul>
+        <!-- End of Footer Navigation left side-->
+      </div>
+    </div>
+  </footer>
+  <!-- End of the Footer Section -->
+  <!-- Credits in README.md-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/c18c39146b.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+<!-- End of Credits -->
+
 </html>
